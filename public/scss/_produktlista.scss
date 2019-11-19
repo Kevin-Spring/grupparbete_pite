@@ -1,7 +1,11 @@
 .cake__header{
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     padding-top: 30px;
+    letter-spacing: 10px;
+    font-family: $font-style;
+    font-weight: $font-medium;
+    color: $font-col-h2;
 }
 .cake__gridwrapper{
     display: grid;
@@ -23,6 +27,9 @@
     border-radius: 10px;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: $font-style;
+    font-weight: $font-thin;
+    letter-spacing: 2px;
 }
 .cake__gridwrapper__item-1:hover,
 .cake__gridwrapper__item-2:hover,
@@ -36,7 +43,14 @@
     max-width: 100%; 
 }
 .cake__gridwrapper__item-h3{
+    font-family: $font-style;
+    font-weight: $font-regular;
+    color: $back-col-undefined;
+    font-size: 22px;
+    letter-spacing: 5px;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .cake__gridwrapper__item-p{
     text-align: center;
@@ -53,8 +67,9 @@
 	border: none;
 	font-size: 30px;
 	cursor: pointer;
-	outline: inherit;
+    outline: inherit;
+    color: $back-col-undefined;
 }
 .cake__gridwrapper__item-btn:active{
-    color: tomato;
+    color: $font-col-h2;
 }

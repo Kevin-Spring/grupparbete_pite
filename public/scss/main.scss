@@ -3,34 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,400,500&display=swap');
+
+/* Import scss */
+@import "variabel.scss";
 @import "section1.scss";
 @import "produktlista.scss";
-
-/* iPads (Portrait and Landscape) */
-@media only screen and (min-width : 641px) and (max-width : 1224px) {
-
-    .cake__gridwrapper{
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-} 
-
-/* Smartphones (Landscape and Portrait) */
-@media only screen and (min-width : 320px) and (max-width : 640px) {
-
-    .cake__gridwrapper{
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-    
-    .cake__gridwrapper__item-1,
-    .cake__gridwrapper__item-2,
-    .cake__gridwrapper__item-3,
-    .cake__gridwrapper__item-4,
-    .cake__gridwrapper__item-5,
-    .cake__gridwrapper__item-6 {
-        max-width: 75%;
-        margin-left:12%;
-    }
-}
+@import "breakpoints.scss";

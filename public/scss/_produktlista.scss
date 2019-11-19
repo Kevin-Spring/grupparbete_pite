@@ -1,8 +1,8 @@
 .cake__header{
     text-align: center;
-    font-size: 60px;
-    padding-top: 30px;
-    letter-spacing: 10px;
+    font-size: 3.75rem;
+    padding-top: 1.875rem;
+    letter-spacing: 0.625rem;
     font-family: $font-style;
     font-weight: $font-medium;
     color: $font-col-h2;
@@ -11,7 +11,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1.25rem;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
@@ -24,12 +24,12 @@
 .cake__gridwrapper__item-5,
 .cake__gridwrapper__item-6{
     border: 0px solid black;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: $font-style;
     font-weight: $font-thin;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 .cake__gridwrapper__item-1:hover,
 .cake__gridwrapper__item-2:hover,
@@ -46,26 +46,32 @@
     font-family: $font-style;
     font-weight: $font-regular;
     color: $back-col-undefined;
-    font-size: 22px;
-    letter-spacing: 5px;
+    font-size: 1.40rem;
+    letter-spacing: 0.3125rem;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
 }
-.cake__gridwrapper__item-p{
+.cake__gridwrapper__item-description{
     text-align: center;
+}
+.cake__gridwrapper__item-price{
+    text-align: center;
+    font-size: 1.40rem;
+    font-weight: $font-regular;
+    padding-top: 1rem;
 }
 .cake__gridwrapper__item-btn{
     position: relative;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    margin-bottom: 10px;
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right:20px;
+    left: 80%;
+    transform: translate( 0 , -50%);
+    margin-bottom: 0.625rem;
+    margin-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right:1.25rem;
     background: none;
 	border: none;
-	font-size: 30px;
+	font-size: 1.875rem;
 	cursor: pointer;
     outline: inherit;
     color: $back-col-undefined;

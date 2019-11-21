@@ -1,0 +1,109 @@
+#header-img {
+  background-image: url("/Bilder/closeup-photo-of-doughnuts-1191639.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+#bakelse-knapp {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  margin-top: 25px;
+  color: rgb(243, 213, 158);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid pink;
+  text-shadow: 1px 2px 3px rgb(96, 96, 247), 1px 1px 2px rgb(255, 166, 181);
+}
+
+#bakelse-knapp:hover {
+  animation: animate 8s linear infinite;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+#bakelse-knapp:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#bakelse-knapp:hover::before {
+  filter: blur(10px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container span {
+  color: pink;
+  text-transform: uppercase;
+  display: block;
+  text-shadow: 1px 0px white, 7px 5px 8px rgb(223, 127, 143),
+    3px 2px 2px rgb(72, 152, 218);
+}
+
+.text1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.text2 {
+  font-size: 48px;
+}
+
+@keyframes text {
+  0% {
+    color: white;
+    margin-bottom: -600px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -600px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -600px;
+  }
+}

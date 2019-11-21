@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: rgb(255, 212, 95);
+}
+
+.logo {
+  color: pink;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-shadow: -1px 1px 0px white, 7px 5px 8px rgb(223, 127, 143),
+    2px 3px 1px rgb(72, 152, 218);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li:hover {
+  opacity: 0.5;
+  color: grey;
+  transition: all 0.3s ease-in;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20x;
+}
+
+.kundvagn {
+  color: white;
+}
+
+.kundvagn:hover {
+  color: orange;
+  cursor: pointer;
+}

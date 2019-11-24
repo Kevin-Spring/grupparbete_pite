@@ -1,0 +1,192 @@
+footer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.344),rgba(0, 0, 0, 0.152)),url("../Bilder/closeup-photo-of-doughnuts-1191639.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 55%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: $font-style;
+    font-weight: $font-thin;
+    
+}
+/* 
+.footer__container{
+   width: 32%;
+   height: 100%;
+   float: left;
+   margin-left: 15px;
+    
+} */
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+.footer__about-us{
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 45%;
+}
+
+
+/* #footer__om_oss{
+    text-align: center;
+    font-size:25px;
+    color:white;
+}
+
+
+#footer__info{
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    text-align: justify;
+    
+} */
+
+#footer__meny_h2{
+    color: white;
+    padding-left: 40px;
+}
+/* .footer__meny{
+   width: 33%;
+   height: 100%;
+   float: left;
+   
+} */
+
+.a{
+    color: white;
+}
+
+
+.footer__li{
+    list-style: none;
+
+}
+
+.footer__meny .footer__ul .a{
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.footer__meny ul li a:hover{
+    text-decoration: underline;
+
+}
+#link_h2{
+    color: white;
+
+}
+
+.kontakta{
+   width: 32%;
+   height: 100%;
+   float: left;
+   color: white;
+   
+      
+}
+.kont{
+    padding-bottom: 20px;
+    
+}
+
+.footer__social__links li{
+    display: inline-block;
+    list-style: none;   
+ }
+
+.footer__social__links a{
+    /* display: inline-flex;
+    width: 40px; */
+    height: 40px;
+    padding: 0px;
+    background:none;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50%;
+    /* justify-content: center; */
+    transform: translate(50px);
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+/* .footer__social__links a:hover{
+    background: orange;
+} */
+
+.footer__social__links a i{
+    transition: 0.4s all;
+}
+.footer__social__links a:hover > i{
+    transform: scale(1.6) rotate(25deg)
+}
+   
+.copyright{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.344),rgba(0, 0, 0, 0.152)),url("../Bilder/closeup-photo-of-doughnuts-1191639.jpg");
+    background-position: center;
+    
+    color: white;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+}  
+@media screen and (max-width:786px) {
+    /* #footer__meny_h2{
+        align-items: center; 
+        display: flex;
+        flex-direction: row;
+        margin-right: 100px;
+
+
+    } */
+    /* .footer__meny{
+        align-items: center; 
+        display: flex;
+        flex-direction: row;
+        margin-right: 100px;
+    } */
+    .a{
+        margin-left: -20px;
+    }
+   /*  .footer__social__links{
+        display: flex;
+        flex-direction: row;
+        margin-top: 140px;
+        margin-left: -130px;
+    }
+ */
+    .footer{
+        height:auto;
+        /* display: flex; */
+        font-size: 15px;
+    }
+
+    /* .footer__container{
+        margin-left: 6px;
+        margin-top: -6px;
+    } */
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #kontakta_h2{
+        text-align: center;
+    }
+}

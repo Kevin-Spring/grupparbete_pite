@@ -14,12 +14,14 @@ nav {
   text-shadow: -1px 1px 0px white, 7px 5px 8px rgb(223, 127, 143),
     2px 3px 1px rgb(72, 152, 218);
   text-decoration: none;
+  font-family: $font-style;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  font-family: $font-style;
 }
 
 .nav-links li:hover {

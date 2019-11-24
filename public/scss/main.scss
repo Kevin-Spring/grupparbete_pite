@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,400,500&display=swap');
 
@@ -15,6 +22,7 @@
 @import "produktlista.scss";
 @import "section2.scss";
 @import "contactform.scss";
+@import "footer.scss";
 @import "breakpoints.scss";
 @import "media-queries";
 @import "keyframes.scss";

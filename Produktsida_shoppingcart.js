@@ -5,6 +5,20 @@ function shoppingKnapp (){
 const shoppingvagn = document.querySelector(".kundvagn");
 shoppingvagn.addEventListener("click", shoppingKnapp);
 
+/* -------------------- FUNCTION FOR SHOPPINGCART COUNTER------------------------- */
+let clickCount = 0;
+
+function shoppingcartCounter () {
+    const counter = document.querySelector(".counter");
+    clickCount = clickCount +1;
+    counter.innerHTML = clickCount;
+}
+
+const counterBtn = document.querySelectorAll("#shoppingcart-counter");
+for (let i = 0; i<counterBtn.length; i++) {
+    counterBtn[i].addEventListener("click", shoppingcartCounter);
+}
+
 
 
 /* ---------------------FUNKTION FÖR KNAPP 1 I PRODUKTLISTA------------------------ */
@@ -97,4 +111,3 @@ function setItemValueBtn6 () {
 }
 const SixthProductBtn = document.querySelector(".cake__gridwrapper__item-btn-6");
 SixthProductBtn.addEventListener("click", setItemValueBtn6);
-

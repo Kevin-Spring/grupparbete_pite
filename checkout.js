@@ -1,3 +1,4 @@
+/* ---------------------- Creates the productlist in the checkout ---------------------------- */
 function ShowData(){
     const fakturaPris1 = document.querySelector(".fakturapris1");
     const fakturaPris2 = document.querySelector(".fakturapris2");
@@ -48,8 +49,15 @@ function ShowData(){
     
   }
 
-  //DOMContentLoaded event väntar tills documentet laddas upp helt sedan anropar 
-  //functionen inuti den
+  /* -------------------- DOM EVENT---------------------- */
   document.addEventListener("DOMContentLoaded", function (){
     ShowData();
  })
+
+
+ /* ----------------- Invoice Button ------------------- */
+ function invoiceBtn (){
+  window.document.location="invoice.html";
+}
+const checkoutInvoiceBtn = document.querySelector(".checkout-to-invoice-btn");
+checkoutInvoiceBtn.addEventListener("click", invoiceBtn);

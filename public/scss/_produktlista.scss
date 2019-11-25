@@ -39,10 +39,20 @@
 .cake__gridwrapper__item-6:hover{
     transform: scale(1.03);
 }
-.cake__gridwrapper__item-img{
+.cake__gridwrapper__item-img-1,
+.cake__gridwrapper__item-img-2,
+.cake__gridwrapper__item-img-3,
+.cake__gridwrapper__item-img-4,
+.cake__gridwrapper__item-img-5,
+.cake__gridwrapper__item-img-6{
     max-width: 100%; 
 }
-.cake__gridwrapper__item-h3{
+.cake__gridwrapper__item-h3-1,
+.cake__gridwrapper__item-h3-2,
+.cake__gridwrapper__item-h3-3,
+.cake__gridwrapper__item-h3-4,
+.cake__gridwrapper__item-h3-5,
+.cake__gridwrapper__item-h3-6{
     font-family: $font-style;
     font-weight: $font-regular;
     color: $back-col-undefined;
@@ -55,13 +65,23 @@
 .cake__gridwrapper__item-description{
     text-align: center;
 }
-.cake__gridwrapper__item-price{
+.cake__gridwrapper__item-price-1,
+.cake__gridwrapper__item-price-2,
+.cake__gridwrapper__item-price-3,
+.cake__gridwrapper__item-price-4,
+.cake__gridwrapper__item-price-5,
+.cake__gridwrapper__item-price-6{
     text-align: center;
     font-size: 1.40rem;
     font-weight: $font-regular;
     padding-top: 1rem;
 }
-.cake__gridwrapper__item-btn{
+.cake__gridwrapper__item-btn-1,
+.cake__gridwrapper__item-btn-2,
+.cake__gridwrapper__item-btn-3,
+.cake__gridwrapper__item-btn-4,
+.cake__gridwrapper__item-btn-5,
+.cake__gridwrapper__item-btn-6{
     position: relative;
     left: 80%;
     transform: translate( 0 , -50%);
@@ -76,6 +96,11 @@
     outline: inherit;
     color: $back-col-undefined;
 }
-.cake__gridwrapper__item-btn:active{
+.cake__gridwrapper__item-btn-1:active,
+.cake__gridwrapper__item-btn-2:active,
+.cake__gridwrapper__item-btn-3:active,
+.cake__gridwrapper__item-btn-4:active,
+.cake__gridwrapper__item-btn-5:active,
+.cake__gridwrapper__item-btn-6:active{
     color: $font-col-h2;
 }

@@ -21,29 +21,29 @@ function ShowData(){
     const productImage5 = document.querySelector(".productImage5");
     const productImage6 = document.querySelector(".productImage6");
    
-    fakturaPris1.innerHTML= localStorage.getItem("FirstProductPrice");
-    productheader1.innerHTML = localStorage.getItem("FirstProductHeader");
-    productImage1.src = localStorage.getItem("FirstProductImg");
+    fakturaPris1.innerHTML= sessionStorage.getItem("FirstProductPrice");
+    productheader1.innerHTML = sessionStorage.getItem("FirstProductHeader");
+    productImage1.src = sessionStorage.getItem("FirstProductImg");
 
-    fakturaPris2.innerHTML = localStorage.getItem("SecondProductPrice");
-    productheader2.innerHTML = localStorage.getItem("SecondProductHeader");
-    productImage2.src = localStorage.getItem("SecondProductImg");
+    fakturaPris2.innerHTML = sessionStorage.getItem("SecondProductPrice");
+    productheader2.innerHTML = sessionStorage.getItem("SecondProductHeader");
+    productImage2.src = sessionStorage.getItem("SecondProductImg");
 
-    fakturaPris3.innerHTML = localStorage.getItem("ThirdProductPrice");
-    productheader3.innerHTML = localStorage.getItem("ThirdProductHeader");
-    productImage3.src = localStorage.getItem("ThirdProductImg");
+    fakturaPris3.innerHTML = sessionStorage.getItem("ThirdProductPrice");
+    productheader3.innerHTML = sessionStorage.getItem("ThirdProductHeader");
+    productImage3.src = sessionStorage.getItem("ThirdProductImg");
 
-    fakturaPris4.innerHTML = localStorage.getItem("FourthProductPrice");
-    productheader4.innerHTML = localStorage.getItem("FourthProductHeader");
-    productImage4.src = localStorage.getItem("FourthProductImg");
+    fakturaPris4.innerHTML = sessionStorage.getItem("FourthProductPrice");
+    productheader4.innerHTML = sessionStorage.getItem("FourthProductHeader");
+    productImage4.src = sessionStorage.getItem("FourthProductImg");
 
-    fakturaPris5.innerHTML = localStorage.getItem("FifthProductPrice");
-    productheader5.innerHTML = localStorage.getItem("FifthProductHeader");
-    productImage5.src = localStorage.getItem("FifthProductImg");
+    fakturaPris5.innerHTML = sessionStorage.getItem("FifthProductPrice");
+    productheader5.innerHTML = sessionStorage.getItem("FifthProductHeader");
+    productImage5.src = sessionStorage.getItem("FifthProductImg");
 
-    fakturaPris6.innerHTML = localStorage.getItem("SixthProductPrice");
-    productheader6.innerHTML = localStorage.getItem("SixthProductHeader");
-    productImage6.src = localStorage.getItem("SixthProductImg");
+    fakturaPris6.innerHTML = sessionStorage.getItem("SixthProductPrice");
+    productheader6.innerHTML = sessionStorage.getItem("SixthProductHeader");
+    productImage6.src = sessionStorage.getItem("SixthProductImg");
 
 
     
@@ -57,6 +57,8 @@ function ShowData(){
 
  /* ----------------- Invoice Button ------------------- */
  function invoiceBtn (){
+   const dataToInvoice = document.querySelector("#checkoutform").innerHTML;
+   sessionStorage.setItem("dataToInvoice", dataToInvoice);
   window.document.location="invoice.html";
 }
 const checkoutInvoiceBtn = document.querySelector(".checkout-to-invoice-btn");

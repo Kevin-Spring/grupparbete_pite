@@ -27,9 +27,9 @@ function setItemValueBtn1 () {
     const FirstProductPrice = document.querySelector(".cake__gridwrapper__item-price-1").innerHTML;
     const FirstProductHeader = document.querySelector(".cake__gridwrapper__item-h3-1").innerHTML;
     const FirstProductImg = document.querySelector(".cake__gridwrapper__item-img-1").src;
-    localStorage.setItem("FirstProductPrice", FirstProductPrice);
-    localStorage.setItem("FirstProductHeader", FirstProductHeader);
-    localStorage.setItem("FirstProductImg", FirstProductImg);
+    sessionStorage.setItem("FirstProductPrice", FirstProductPrice);
+    sessionStorage.setItem("FirstProductHeader", FirstProductHeader);
+    sessionStorage.setItem("FirstProductImg", FirstProductImg);
     /* window.document.location="faktura.html"; */
 
 }
@@ -43,9 +43,9 @@ function setItemValueBtn2 () {
     const SecondProductPrice = document.querySelector(".cake__gridwrapper__item-price-2").innerHTML;
     const SecondProductHeader = document.querySelector(".cake__gridwrapper__item-h3-2").innerHTML;
     const SecondProductImg = document.querySelector(".cake__gridwrapper__item-img-2").src;
-    localStorage.setItem("SecondProductPrice", SecondProductPrice);
-    localStorage.setItem("SecondProductHeader", SecondProductHeader);
-    localStorage.setItem("SecondProductImg", SecondProductImg);
+    sessionStorage.setItem("SecondProductPrice", SecondProductPrice);
+    sessionStorage.setItem("SecondProductHeader", SecondProductHeader);
+    sessionStorage.setItem("SecondProductImg", SecondProductImg);
     
 
 }
@@ -58,9 +58,9 @@ function setItemValueBtn3 () {
     const ThirdProductPrice = document.querySelector(".cake__gridwrapper__item-price-3").innerHTML;
     const ThirdProductHeader = document.querySelector(".cake__gridwrapper__item-h3-3").innerHTML;
     const ThirdProductImg = document.querySelector(".cake__gridwrapper__item-img-3").src;
-    localStorage.setItem("ThirdProductPrice", ThirdProductPrice);
-    localStorage.setItem("ThirdProductHeader", ThirdProductHeader);
-    localStorage.setItem("ThirdProductImg", ThirdProductImg);
+    sessionStorage.setItem("ThirdProductPrice", ThirdProductPrice);
+    sessionStorage.setItem("ThirdProductHeader", ThirdProductHeader);
+    sessionStorage.setItem("ThirdProductImg", ThirdProductImg);
     
 
 }
@@ -73,9 +73,9 @@ function setItemValueBtn4 () {
     const FourthProductPrice = document.querySelector(".cake__gridwrapper__item-price-4").innerHTML;
     const FourthProductHeader = document.querySelector(".cake__gridwrapper__item-h3-4").innerHTML;
     const FourthProductImg = document.querySelector(".cake__gridwrapper__item-img-4").src;
-    localStorage.setItem("FourthProductPrice", FourthProductPrice);
-    localStorage.setItem("FourthProductHeader", FourthProductHeader);
-    localStorage.setItem("FourthProductImg", FourthProductImg);
+    sessionStorage.setItem("FourthProductPrice", FourthProductPrice);
+    sessionStorage.setItem("FourthProductHeader", FourthProductHeader);
+    sessionStorage.setItem("FourthProductImg", FourthProductImg);
     
 
 }
@@ -88,9 +88,9 @@ function setItemValueBtn5 () {
     const FifthProductPrice = document.querySelector(".cake__gridwrapper__item-price-5").innerHTML;
     const FifthProductHeader = document.querySelector(".cake__gridwrapper__item-h3-5").innerHTML;
     const FifthProductImg = document.querySelector(".cake__gridwrapper__item-img-5").src;
-    localStorage.setItem("FifthProductPrice", FifthProductPrice);
-    localStorage.setItem("FifthProductHeader", FifthProductHeader);
-    localStorage.setItem("FifthProductImg", FifthProductImg);
+    sessionStorage.setItem("FifthProductPrice", FifthProductPrice);
+    sessionStorage.setItem("FifthProductHeader", FifthProductHeader);
+    sessionStorage.setItem("FifthProductImg", FifthProductImg);
     
 
 }
@@ -103,9 +103,9 @@ function setItemValueBtn6 () {
     const SixthProductPrice = document.querySelector(".cake__gridwrapper__item-price-6").innerHTML;
     const SixthProductHeader = document.querySelector(".cake__gridwrapper__item-h3-6").innerHTML;
     const SixthProductImg = document.querySelector(".cake__gridwrapper__item-img-6").src;
-    localStorage.setItem("SixthProductPrice", SixthProductPrice);
-    localStorage.setItem("SixthProductHeader", SixthProductHeader);
-    localStorage.setItem("SixthProductImg", SixthProductImg);
+    sessionStorage.setItem("SixthProductPrice", SixthProductPrice);
+    sessionStorage.setItem("SixthProductHeader", SixthProductHeader);
+    sessionStorage.setItem("SixthProductImg", SixthProductImg);
     
 
 }

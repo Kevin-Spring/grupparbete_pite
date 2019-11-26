@@ -65,6 +65,11 @@
 .cake__gridwrapper__item-description{
     text-align: center;
 }
+.cake__gridwrapper__item-description-price{
+    text-align: center;
+    padding-top: 2rem;
+    color: rgba(0, 0, 0, 0.432);
+}
 .cake__gridwrapper__item-price-1,
 .cake__gridwrapper__item-price-2,
 .cake__gridwrapper__item-price-3,
@@ -75,6 +80,7 @@
     font-size: 1.40rem;
     font-weight: $font-regular;
     padding-top: 1rem;
+    color: rgba(0, 0, 0, 0.637);
 }
 .cake__gridwrapper__item-btn-1,
 .cake__gridwrapper__item-btn-2,

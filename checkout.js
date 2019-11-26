@@ -57,8 +57,36 @@ function ShowData(){
 
  /* ----------------- Invoice Button ------------------- */
  function invoiceBtn (){
-   const dataToInvoice = document.querySelector("#checkoutform").innerHTML;
-   sessionStorage.setItem("dataToInvoice", dataToInvoice);
+
+   const productPrice1 = document.querySelector(".fakturapris1").innerHTML;
+   const productPrice2 = document.querySelector(".fakturapris2").innerHTML;
+   const productPrice3 = document.querySelector(".fakturapris3").innerHTML;
+   const productPrice4 = document.querySelector(".fakturapris4").innerHTML;
+   const productPrice5 = document.querySelector(".fakturapris5").innerHTML;
+   const productPrice6 = document.querySelector(".fakturapris6").innerHTML;
+
+   const productName1 = document.querySelector(".productheader1").innerHTML;
+   const productName2 = document.querySelector(".productheader2").innerHTML;
+   const productName3 = document.querySelector(".productheader3").innerHTML;
+   const productName4 = document.querySelector(".productheader4").innerHTML;
+   const productName5 = document.querySelector(".productheader5").innerHTML;
+   const productName6 = document.querySelector(".productheader6").innerHTML;
+
+   sessionStorage.setItem("productPrice1", productPrice1);
+   sessionStorage.setItem("productPrice2", productPrice2);
+   sessionStorage.setItem("productPrice3", productPrice3);
+   sessionStorage.setItem("productPrice4", productPrice4);
+   sessionStorage.setItem("productPrice5", productPrice5);
+   sessionStorage.setItem("productPrice6", productPrice6);
+
+   sessionStorage.setItem("productName1", productName1);
+   sessionStorage.setItem("productName2", productName2);
+   sessionStorage.setItem("productName3", productName3);
+   sessionStorage.setItem("productName4", productName4);
+   sessionStorage.setItem("productName5", productName5);
+   sessionStorage.setItem("productName6", productName6);
+
+
   window.document.location="invoice.html";
 }
 const checkoutInvoiceBtn = document.querySelector(".checkout-to-invoice-btn");

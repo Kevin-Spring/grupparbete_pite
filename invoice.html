@@ -1,50 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Invoice template</title>
+    <link rel="stylesheet" href="public/css/styles.css">
     <script src="invoice.js" defer></script>
 </head>
+
 <body>
-    <!-- Invoice Info -->
-    <div class="ordernr"></div>
-    <div class="datum"></div>
+<header>
+    <div>
+        <button class="print"><i></i> Print</button>
+        <button class="download"><i></i> Download as PDF</button>
+    </div>
+</header>
+<main>
+    <div class="invoice-box">
+        <table>
+            <tr class="top">
+                <td>
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="public/Bilder/Logo.png">
+                            </td>
+                            
+                            <td>
+                                Invoice <br>
+                                <!-- Invoice No: 123456 --> <br>
+                                <div class="ordernr"></div>
+                                <!-- Invoice Date: 1/12/2019 <br> -->
+                                <div class="datum"></div>
+                                Due Date: 31/12/2019 <br>
+                                Customer Number:10 <br>
+                                <!-- <div class="customernr"></div> -->
+                                Plusgironr: 1234567-8 <br>
+                                Bankgironu: 123-4567
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="information">
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                Web Bakery AB<br>
+                                Tulegatan 41<br>
+                                 113 53 Stockholm
+                            </td>
+                            
+                            <td>
+                                Bill to:<br>
+                                Helio AB<br>
+                                Mattias Johansson <br>
+                                Grev Turegatan 30 <br>
+                                114 38 Stockhom <br>
 
-    <!-- Product 1 -->
-    <div class="productInvoiceName1"></div>
-    <div class="productInvoicePrice1"></div>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+</main>
+<footer>
+            
+            <tr class="heading">
+                <td>
+                    Description
+                </td>
+                <td>
+                    Amount
+                </td>
+                <td>
+                    Unit
+                    </td>
+                <td>
+                    Price
+                </td>
+                
+                <td>
+                    Tax
+                </td>
+                <td>
+                    Tax kr
+                </td>
+                <td>
+                    Total kr
+                 </td>
 
-    <!-- Product 2 -->
-    <div class="productInvoiceName2"></div>
-    <div class="productInvoicePrice2"></div>
+            </tr>
+            
+            <tr class="item">
+                <td class="productheader1">
+                        <div class="productInvoiceName1"></div>
+                    <!-- Cake -->
+                </td>
+                <td class="prodct-1" class="productheader1">
+                    1
+                </td>
+                <td class="prodct-2" class="productheader1">
+                    pieces
+                </td>
+                <td class="productheader1">
+                    <div class="delpris1"></div>
+                    <!-- 200 -->
+                </td>
+                <td class="productheader1">
+                    25%
+                </td>
+                <td class="fakturapris1">
+                    <div class="taxesprice1"></div>
+                    <!-- 50kr -->
+                </td>
+                <td class="fakturapris1">
+                        <div class="productInvoicePrice1"></div>
+                    <!-- 225kr -->
+                </td>
+            </tr>
+            <tr class="item">
+                <td class="productheader2">
+                        <div class="productInvoiceName2"></div>
+                    <!-- Cake -->
+                </td>
+                <td class="prodct-1" class="productheader2">
+                    1
+                </td>
+                <td class="prodct-2" class="productheader2">
+                    pieces
+                </td>
+                <td class="productheader2">
+                        <div class="delpris2"></div>
+                    <!-- 200 -->
+                </td>
+                <td class="productheader2">
+                    25%
+                </td>
+                    
+                <td class="fakturapris2">
+                        <div class="taxesprice2"></div>
+                    <!-- 50kr -->
+                </td>
+                <td class="fakturapris2">
+                        <div class="productInvoicePrice2"></div>
+                    <!-- 225kr -->
+                </td>
+            </tr>
+             <tr class="item">
+                <td class="productheader3">
+                        <div class="productInvoiceName3"></div>
+                    <!-- Cake -->
+                </td>
+                <td class="prodct-1" class="productheader3">
+                    1
+                </td>
+                <td class="prodct-2" class="productheader3">
+                    pieces
+                </td>
+                <td class="productheader3">
+                        <div class="delpris3"></div>
+                    <!-- 200 -->
+                </td>
+                <td class="productheader3">
+                    25%
+                </td>
+                
+                <td class="fakturapris3">
+                        <div class="taxesprice3"></div>
+                    <!-- 50kr -->
+                </td>
+                <td class="fakturapris3">
+                        <div class="productInvoicePrice3"></div>
+                    <!-- 225kr -->
+                </td>
+            </tr>
+            <tr class="item">
+                <td class="productheader4">
+                        <div class="productInvoiceName4"></div>
+                    <!-- Cake -->
+                </td>
+                <td class="prodct-1" class="productheader4">
+                    1
+                </td>
+                <td class="prodct-2" class="productheader4">
+                    pieces
+                </td>
+                <td class="productheader4">
+                        <div class="delpris4"></div>
+                    <!-- 200 -->
+                </td>
+                <td class="productheader4">
+                    25%
+                </td>
+                    
+                <td class="fakturapris4">
+                        <div class="taxesprice4"></div>
+                    <!-- 50kr -->
+                </td>
+                <td class="fakturapris4">
+                        <div class="productInvoicePrice4"></div>
+                    <!-- 225kr -->
+                </td>
+            </tr>
+            <tr class="item">
+                    <td class="productheader1">
+                            <div class="productInvoiceName5"></div>
+                        <!-- Cake -->
+                    </td>
+                    <td class="prodct-1" class="productheader1">
+                        1
+                    </td>
+                    <td class="prodct-2" class="productheader1">
+                        pieces
+                    </td>
+                    <td class="productheader1">
+                            <div class="delpris5"></div>
+                        <!-- 200 -->
+                    </td>
+                    <td class="productheader1">
+                        25%
+                    </td>
+                    <td class="fakturapris1">
+                            <div class="taxesprice5"></div>
+                        <!-- 50kr -->
+                    </td>
+                    <td class="fakturapris1">
+                            <div class="productInvoicePrice5"></div>
+                        <!-- 225kr -->
+                    </td>
+                </tr>
+                <tr class="item">
+                        <td class="productheader1">
+                                <div class="productInvoiceName6"></div>
+                            <!-- Cake -->
+                        </td>
+                        <td class="prodct-1" class="productheader1">
+                            1
+                        </td>
+                        <td class="prodct-2" class="productheader1">
+                            pieces
+                        </td>
+                        <td class="productheader1">
+                                <div class="delpris6"></div>
+                            <!-- 200 -->
+                        </td>
+                        <td class="productheader1">
+                            25%
+                        </td>
+                        <td class="fakturapris1">
+                                <div class="taxesprice6"></div>
+                            <!-- 50kr -->
+                        </td>
+                        <td class="fakturapris1">
+                                <div class="productInvoicePrice6"></div>
+                            <!-- 225kr -->
+                        </td>
+                    </tr>
+            </tr>
 
-    <!-- Product 3 -->
-    <div class="productInvoiceName3"></div>
-    <div class="productInvoicePrice3"></div>
-
-    <!-- Product 4 -->
-    <div class="productInvoiceName4"></div>
-    <div class="productInvoicePrice4"></div>
-
-    <!-- Product 5 -->
-    <div class="productInvoiceName5"></div>
-    <div class="productInvoicePrice5"></div>
-
-    <!-- Product 6 -->
-    <div class="productInvoiceName6"></div>
-    <div class="productInvoicePrice6"></div>
-
-    <!-- Totalsumma -->
-    <div class="totalinvoicesum"></div>
-
-    <!-- Totalmoms -->
-    <div class="totaltaxes"></div>
-
-    <!-- Totalsumma inklusive moms -->
-    <div class="totalinvoicesumtaxes"></div>
-
-
+            
+            <tr class="total">
+                <td>
+                        <div class="totalinvoicesum"></div>
+                   <!-- Total: 1000.00kr -->
+                </td>
+            </tr>
+            <tr class="total">
+                    <td>
+                            <div class="totaltaxes"></div>
+                       <!-- Total: 1000.00kr -->
+                    </td>
+                </tr>
+                <tr class="total">
+                        <td>
+                            <div class="totalinvoicesumtaxes"></div>
+                           <!-- Total: 1000.00kr -->
+                        </td>
+                    </tr>
+        </table>       
+    </div>
+</footer>
 </body>
 </html>

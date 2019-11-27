@@ -87,6 +87,7 @@ function ShowData(){
    sessionStorage.setItem("productName6", productName6);
 
 
+  /* window.document.location="kevin_invoice.html"; */
   window.document.location="invoice.html";
 }
 const checkoutInvoiceBtn = document.querySelector(".checkout-to-invoice-btn");

@@ -143,8 +143,11 @@ function getDataCheckout (){
 
  total();
 
-
-
+ const printBtn = document.querySelector(".print");  
+ function skrivUt() {   
+     window.print(); 
+    }  
+ printBtn.addEventListener("click", skrivUt);
 
 
 

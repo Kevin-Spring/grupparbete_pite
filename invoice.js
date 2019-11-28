@@ -143,6 +143,7 @@ function getDataCheckout (){
 
  total();
 
+ /* --------------- Print button function ------------------- */
  const printBtn = document.querySelector(".print");  
  function skrivUt() {   
      window.print(); 
@@ -150,11 +151,7 @@ function getDataCheckout (){
  printBtn.addEventListener("click", skrivUt);
 
 
-
-
-
-
-
+/* ---------------------- DOM event ------------------------- */
  document.addEventListener("DOMContentLoaded", function (){
     getDataCheckout();
  })

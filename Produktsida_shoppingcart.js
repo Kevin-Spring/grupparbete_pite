@@ -20,6 +20,7 @@ for (let i = 0; i < counterBtn.length; i++) {
 }
 
 /* ---------------------FUNKTION FÖR KNAPP 1 I PRODUKTLISTA------------------------ */
+
 function setItemValueBtn1() {
   const FirstProductPrice = document.querySelector(
     ".cake__gridwrapper__item-price-1"
@@ -30,10 +31,17 @@ function setItemValueBtn1() {
   const FirstProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-1"
   ).src;
+    
+    /* --------------------- Add Item 1 to Cart ----------------------------------- */
+    const addItemtoCart = document.querySelector(".shoppingcart__Items");
+    const addItemtoCartLi = document.createElement("li");
+    addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
+    addItemtoCartLi.innerHTML = FirstProductHeader + ": " + FirstProductPrice + ":-";
+  
   sessionStorage.setItem("FirstProductPrice", FirstProductPrice);
   sessionStorage.setItem("FirstProductHeader", FirstProductHeader);
   sessionStorage.setItem("FirstProductImg", FirstProductImg);
-  /* window.document.location="faktura.html"; */
+
 }
 const FirstProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-1"
@@ -51,6 +59,13 @@ function setItemValueBtn2() {
   const SecondProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-2"
   ).src;
+
+    /* --------------------- Add Item 2 to Cart ---------------------- */
+    const addItemtoCart = document.querySelector(".shoppingcart__Items");
+    const addItemtoCartLi = document.createElement("li");
+    addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
+    addItemtoCartLi.innerHTML = SecondProductHeader + ": " +  SecondProductPrice + ":-";
+
   sessionStorage.setItem("SecondProductPrice", SecondProductPrice);
   sessionStorage.setItem("SecondProductHeader", SecondProductHeader);
   sessionStorage.setItem("SecondProductImg", SecondProductImg);
@@ -71,6 +86,13 @@ function setItemValueBtn3() {
   const ThirdProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-3"
   ).src;
+
+  /* --------------------- Add Item 3 to Cart ---------------------- */
+  const addItemtoCart = document.querySelector(".shoppingcart__Items");
+  const addItemtoCartLi = document.createElement("li");
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = ThirdProductHeader + ": " +  ThirdProductPrice + ":-";
+
   sessionStorage.setItem("ThirdProductPrice", ThirdProductPrice);
   sessionStorage.setItem("ThirdProductHeader", ThirdProductHeader);
   sessionStorage.setItem("ThirdProductImg", ThirdProductImg);
@@ -91,6 +113,12 @@ function setItemValueBtn4() {
   const FourthProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-4"
   ).src;
+  /* --------------------- Add Item 4 to Cart ---------------------- */
+  const addItemtoCart = document.querySelector(".shoppingcart__Items");
+  const addItemtoCartLi = document.createElement("li");
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = FourthProductHeader + ": " +  FourthProductPrice + ":-";
+
   sessionStorage.setItem("FourthProductPrice", FourthProductPrice);
   sessionStorage.setItem("FourthProductHeader", FourthProductHeader);
   sessionStorage.setItem("FourthProductImg", FourthProductImg);
@@ -111,6 +139,13 @@ function setItemValueBtn5() {
   const FifthProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-5"
   ).src;
+
+  /* --------------------- Add Item 5 to Cart ---------------------- */
+  const addItemtoCart = document.querySelector(".shoppingcart__Items");
+  const addItemtoCartLi = document.createElement("li");
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = FifthProductHeader + ": " +  FifthProductPrice + ":-";
+
   sessionStorage.setItem("FifthProductPrice", FifthProductPrice);
   sessionStorage.setItem("FifthProductHeader", FifthProductHeader);
   sessionStorage.setItem("FifthProductImg", FifthProductImg);
@@ -131,6 +166,13 @@ function setItemValueBtn6() {
   const SixthProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-6"
   ).src;
+
+  /* --------------------- Add Item 6 to Cart ---------------------- */
+  const addItemtoCart = document.querySelector(".shoppingcart__Items");
+  const addItemtoCartLi = document.createElement("li");
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = SixthProductHeader + ": " +  SixthProductPrice + ":-";
+
   sessionStorage.setItem("SixthProductPrice", SixthProductPrice);
   sessionStorage.setItem("SixthProductHeader", SixthProductHeader);
   sessionStorage.setItem("SixthProductImg", SixthProductImg);

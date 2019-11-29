@@ -5,6 +5,14 @@
 /* ------------- Generate the Date of the day ------------- */
     let date = document.querySelector(".datum");
     date.innerHTML = "Date: " + new Date().toLocaleDateString();
+
+/*--------------------- Get due date ---------------------- */
+    let dueDate = document.querySelector(".dueDate");
+
+    let thisDate = new Date();
+    thisDate.setDate(thisDate.getDate() + 30);
+    dueDate.innerHTML = "Due Date: " + thisDate.toLocaleDateString();
+
 /* ------------- Generate random customer nr -------------- */
 /*     let customerNr = document.querySelector(".customernr");
     customerNr.innerHTML = "Customer nr: " + Math.floor(Math.random() * 10001); */
@@ -43,14 +51,22 @@ function getDataCheckout (){
     const productDelPris4 = document.querySelector(".delpris4");
     const productDelPris5 = document.querySelector(".delpris5");
     const productDelPris6 = document.querySelector(".delpris6");
+
+    /* Get product price */
+    const getProductPriceInvoice1 = sessionStorage.getItem("productPrice1");
+    const getProductPriceInvoice2 = sessionStorage.getItem("productPrice2");
+    const getProductPriceInvoice3 = sessionStorage.getItem("productPrice3");
+    const getProductPriceInvoice4 = sessionStorage.getItem("productPrice4");
+    const getProductPriceInvoice5 = sessionStorage.getItem("productPrice5");
+    const getProductPriceInvoice6 = sessionStorage.getItem("productPrice6");
     
     /* ---------------------- Gets the product price ----------------------------- */
-    productPriceInvoice1.innerHTML = sessionStorage.getItem("productPrice1");
-    productPriceInvoice2.innerHTML = sessionStorage.getItem("productPrice2");
-    productPriceInvoice3.innerHTML = sessionStorage.getItem("productPrice3");
-    productPriceInvoice4.innerHTML = sessionStorage.getItem("productPrice4");
-    productPriceInvoice5.innerHTML = sessionStorage.getItem("productPrice5");
-    productPriceInvoice6.innerHTML = sessionStorage.getItem("productPrice6");
+    productPriceInvoice1.innerHTML = (Number(getProductPriceInvoice1)) + (Number(getProductPriceInvoice1)) * .25;
+    productPriceInvoice2.innerHTML = (Number(getProductPriceInvoice2)) + (Number(getProductPriceInvoice2)) * .25;
+    productPriceInvoice3.innerHTML = (Number(getProductPriceInvoice3)) + (Number(getProductPriceInvoice3)) * .25;
+    productPriceInvoice4.innerHTML = (Number(getProductPriceInvoice4)) + (Number(getProductPriceInvoice4)) * .25;
+    productPriceInvoice5.innerHTML = (Number(getProductPriceInvoice5)) + (Number(getProductPriceInvoice5)) * .25;
+    productPriceInvoice6.innerHTML = (Number(getProductPriceInvoice6)) + (Number(getProductPriceInvoice6)) * .25;
 
     /*  --------------------- Gets the product names ----------------------------- */
     productNameInvoice1.innerHTML = sessionStorage.getItem("productName1");
@@ -111,19 +127,19 @@ function getDataCheckout (){
     let dispalyTotalTaxes = document.querySelector(".totalinvoicesumtaxes");
     
     /* ------------------------ Variabels for displaying the taxprice of the product in the column taxes ------------- */
-    let taxesCoulmn1 = document.querySelector(".taxesprice1")
-    let taxesCoulmn2 = document.querySelector(".taxesprice2")
-    let taxesCoulmn3 = document.querySelector(".taxesprice3")
-    let taxesCoulmn4 = document.querySelector(".taxesprice4")
-    let taxesCoulmn5 = document.querySelector(".taxesprice5")
-    let taxesCoulmn6 = document.querySelector(".taxesprice6")
+    let taxesCoulmn1 = document.querySelector(".taxesprice1");
+    let taxesCoulmn2 = document.querySelector(".taxesprice2");
+    let taxesCoulmn3 = document.querySelector(".taxesprice3");
+    let taxesCoulmn4 = document.querySelector(".taxesprice4");
+    let taxesCoulmn5 = document.querySelector(".taxesprice5");
+    let taxesCoulmn6 = document.querySelector(".taxesprice6");
 
-    taxesCoulmn1.innerHTML = (Number(taxesProductPrice1) * .25);
-    taxesCoulmn2.innerHTML = (Number(taxesProductPrice2) * .25);
-    taxesCoulmn3.innerHTML = (Number(taxesProductPrice3) * .25);
-    taxesCoulmn4.innerHTML = (Number(taxesProductPrice4) * .25);
-    taxesCoulmn5.innerHTML = (Number(taxesProductPrice5) * .25);
-    taxesCoulmn6.innerHTML = (Number(taxesProductPrice6) * .25);
+    taxesCoulmn1.innerHTML = (Number(totalProductPrice1) * .25);
+    taxesCoulmn2.innerHTML = (Number(totalProductPrice2) * .25);
+    taxesCoulmn3.innerHTML = (Number(totalProductPrice3) * .25);
+    taxesCoulmn4.innerHTML = (Number(totalProductPrice4) * .25);
+    taxesCoulmn5.innerHTML = (Number(totalProductPrice5) * .25);
+    taxesCoulmn6.innerHTML = (Number(totalProductPrice6) * .25);
     
     /* ----------------------- Calculates the total price of all products ---------------------- */
     let totalsum =  (Number(totalProductPrice1)) + (Number(totalProductPrice2)) + 

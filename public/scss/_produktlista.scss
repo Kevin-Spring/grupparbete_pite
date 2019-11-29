@@ -1,112 +1,112 @@
-.cake__header{
-    text-align: center;
-    font-size: 3.75rem;
-    padding-top: 1.875rem;
-    letter-spacing: 0.625rem;
-    font-family: $font-style;
-    font-weight: $font-medium;
-    color: $font-col-h2;
+.cake__header {
+  text-align: center;
+  font-size: 3.75rem;
+  padding-top: 1.875rem;
+  letter-spacing: 0.625rem;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
+  color: white;
 }
-.cake__gridwrapper{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.25rem;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.cake__gridwrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .cake__gridwrapper__item-1,
 .cake__gridwrapper__item-2,
 .cake__gridwrapper__item-3,
 .cake__gridwrapper__item-4,
 .cake__gridwrapper__item-5,
-.cake__gridwrapper__item-6{
-    border: 0px solid black;
-    border-radius: 0.625rem;
-    background: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: $font-style;
-    font-weight: $font-thin;
-    letter-spacing: 0.125rem;
+.cake__gridwrapper__item-6 {
+  border: 0 solid #000;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.125rem;
 }
 .cake__gridwrapper__item-1:hover,
 .cake__gridwrapper__item-2:hover,
 .cake__gridwrapper__item-3:hover,
 .cake__gridwrapper__item-4:hover,
 .cake__gridwrapper__item-5:hover,
-.cake__gridwrapper__item-6:hover{
-    transform: scale(1.03);
+.cake__gridwrapper__item-6:hover {
+  transform: scale(1.03);
 }
 .cake__gridwrapper__item-img-1,
 .cake__gridwrapper__item-img-2,
 .cake__gridwrapper__item-img-3,
 .cake__gridwrapper__item-img-4,
 .cake__gridwrapper__item-img-5,
-.cake__gridwrapper__item-img-6{
-    max-width: 100%; 
+.cake__gridwrapper__item-img-6 {
+  max-width: 100%;
 }
 .cake__gridwrapper__item-h3-1,
 .cake__gridwrapper__item-h3-2,
 .cake__gridwrapper__item-h3-3,
 .cake__gridwrapper__item-h3-4,
 .cake__gridwrapper__item-h3-5,
-.cake__gridwrapper__item-h3-6{
-    font-family: $font-style;
-    font-weight: $font-regular;
-    color: $back-col-undefined;
-    font-size: 1.40rem;
-    letter-spacing: 0.3125rem;
-    text-align: center;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+.cake__gridwrapper__item-h3-6 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  color: #ef7a85;
+  font-size: 1.4rem;
+  letter-spacing: 0.3125rem;
+  text-align: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
-.cake__gridwrapper__item-description{
-    text-align: center;
+.cake__gridwrapper__item-description {
+  text-align: center;
 }
-.cake__gridwrapper__item-description-price{
-    text-align: center;
-    padding-top: 2rem;
-    color: rgba(0, 0, 0, 0.432);
+.cake__gridwrapper__item-description-price {
+  text-align: center;
+  padding-top: 2rem;
+  color: rgba(0, 0, 0, 0.432);
 }
 .cake__gridwrapper__item-price-1,
 .cake__gridwrapper__item-price-2,
 .cake__gridwrapper__item-price-3,
 .cake__gridwrapper__item-price-4,
 .cake__gridwrapper__item-price-5,
-.cake__gridwrapper__item-price-6{
-    text-align: center;
-    font-size: 1.40rem;
-    font-weight: $font-regular;
-    padding-top: 1rem;
-    color: rgba(0, 0, 0, 0.637);
+.cake__gridwrapper__item-price-6 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  color: rgba(0, 0, 0, 0.637);
 }
 .cake__gridwrapper__item-btn-1,
 .cake__gridwrapper__item-btn-2,
 .cake__gridwrapper__item-btn-3,
 .cake__gridwrapper__item-btn-4,
 .cake__gridwrapper__item-btn-5,
-.cake__gridwrapper__item-btn-6{
-    position: relative;
-    left: 80%;
-    transform: translate( 0 , -50%);
-    margin-bottom: 0.625rem;
-    margin-top: 1.875rem;
-    padding-left: 1.25rem;
-    padding-right:1.25rem;
-    background: none;
-	border: none;
-	font-size: 1.875rem;
-	cursor: pointer;
-    outline: inherit;
-    color: $back-col-undefined;
+.cake__gridwrapper__item-btn-6 {
+  position: relative;
+  left: 80%;
+  transform: translate(0, -50%);
+  margin-bottom: 0.625rem;
+  margin-top: 1.875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background: 0 0;
+  border: none;
+  font-size: 1.875rem;
+  cursor: pointer;
+  outline: inherit;
+  color: #ef7a85;
 }
 .cake__gridwrapper__item-btn-1:active,
 .cake__gridwrapper__item-btn-2:active,
 .cake__gridwrapper__item-btn-3:active,
 .cake__gridwrapper__item-btn-4:active,
 .cake__gridwrapper__item-btn-5:active,
-.cake__gridwrapper__item-btn-6:active{
-    color: $font-col-h2;
+.cake__gridwrapper__item-btn-6:active {
+  color: #d16666;
 }

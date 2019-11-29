@@ -14,7 +14,6 @@
     <script src="Burger.js" defer></script>
     <script src="Produktsida_shoppingcart.js" defer></script>
 </head>
-<body>
 
     
 
@@ -29,17 +28,21 @@
                 <a href="#">Hem</a>
               </li>
               <li>
-                <a href="#">Bakelser</a>
+                <a href="#section1">Bakelser</a>
               </li>
               <li>
-                <a href="#">Beställning</a>
+                <a href="#section2">Beställning</a>
               </li>
               <li>
-                <a href="#">Om oss</a>
+                <a href="#footer__container">Om oss</a>
               </li>
               <div class="kundvagn">
-                  <i class="fas fa-shopping-cart"></a></i>
-                  <span class="counter"></span>
+                <div class="lista">
+                  <h2 id="popup-heading">Produkter</h2>
+                  <div class="line"></div>
+                  <button id="popup-knapp">Checkout</button>
+                </div>
+                  <i class="fas fa-shopping-cart"></i>
                 </div>
             </ul>
             <!--End of Navigerings bar med logo-->
@@ -61,7 +64,7 @@
             <div class="container">
               <span class="text1">Välkommen till</span>
               <span class="text2">Web bakery</span>
-              <button id="bakelse-knapp">Bakelser</button>
+              <button id="bakelse-knapp"><a id="design-huvudknapp" href="#section1">Bakelser</a></button>
             </div>
           </header>
           <!-- End of Header -->
@@ -134,43 +137,37 @@
         <!-- End of Cake Wrapper -->
     </section>
     <!-- End of Section 1 -->
-
+<hr>
     <!-- Start of Section 2 -->
     <section id="section2"> 
         <div class="contact-form">
         <h1>Orders</h1>
         <h2>Place your special order, make sure to attach a picture if you would like to!</h2>
         <div class="textbox">
-            <label>Name:</label>
+            <label>Name</label>
             <input type="text" name="" value="" placeholder="Fill in name">
         </div>
         
         <div class="textbox">
-        <label>E-mail: </label>
+        <label>E-mail </label>
         <input type="text" name="" value="" placeholder="name@example.com">
         </div>
         
         <div class="textbox">
-        <label>Telephone::</label>
+        <label>Telephone</label>
         <input type="text" name="" value="" placeholder="Fill in phone number">
         </div>
         
         <div class="textbox">
-                <label>Message:</label>
-                <textarea name="name" rows="8" cols="80"> </textarea>
+                <label>Message</label>
+                <textarea name="name"> </textarea>
                 </div>
-        
-        <form enctype="multipart/form-data" action="uploader.php" method="POST">
-            <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-            File to upload: <input name="uploadedfile" type="file" /><br />
-            <input type="submit" value="Upload File" />
-            </form> 
                 <a class="contact-form-btn"> SEND </a>
-        </div>
+        </div>  
         </section>
 
         <!-- End of Section 2 -->
-
+<hr>
         <!-- Start of Footer -->
         <footer class="footer">
 
@@ -210,14 +207,10 @@
           <div class="kontakta">
             <h2 id="kontakta_h2">Contact us</h2>
             <div class="kont">Tulegatan 41 <br>113 53 Stockholm <br>Sweden</div>
-            <div class="kont">Phone: 08-442 95 00</div>
-            <div class="kont">Email: info@webbakery.se</div>
+            <div class="kont1">Phone: 08-442 95 00</div>
+            <div class="kont2">Email: info@webbakery.se</div>
   
           </div>
-          <div class="copyright">
-              <i class="far fa-copyright">Web bakery i Sverige AB</i>
-          </div>
-        </div>
         </footer>
         <!-- End of Footer -->
         

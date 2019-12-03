@@ -1,6 +1,6 @@
 /* --------------------- SHOPPINGVAGNSKNAPP SOM LEDER EN TILL CHECKOUT ------------- */
 function shoppingKnapp() {
-  window.document.location = "checkout.html";
+  window.document.location = "checkoutpage.html";
 }
 const shoppingvagn = document.querySelector("#popup-knapp");
 shoppingvagn.addEventListener("click", shoppingKnapp);

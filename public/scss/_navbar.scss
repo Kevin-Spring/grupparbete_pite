@@ -54,9 +54,6 @@ nav {
   border: 2px solid white;
   top: 50px;
   right: 50px;
- // position: absolute;
- // transition: 0.6s all;
- // transform: translateY(-100%);
   z-index: 100;
   border-radius: 10px;
   text-align: center;
@@ -68,7 +65,6 @@ nav {
 }
 
 #popup-knapp {
-  
   height: 40px;
   width: 100px;
   border-radius: 20px;
@@ -78,6 +74,7 @@ nav {
   font-weight: 700;
   font-size: 15px;
 }
+
 #popup-knapp:hover {
   background: orange;
   color: white;

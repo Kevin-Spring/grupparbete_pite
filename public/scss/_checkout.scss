@@ -6,7 +6,7 @@
   /* Checkout start */
   
   .checkout {
-      margin:2% auto;
+      margin: 2% auto;
       max-width: 75%;
       height: 600px;
       background-color: white;
@@ -24,15 +24,9 @@
       left: 205px;
       float: left;
   }
-  span{
-    font-size: 15px;
-    color:#fff;
-    text-shadow: 0 2px 7px rgba(0, 0, 0, .4);
-    letter-spacing: 2px;
-  }
 
 
-  #orderstatus span{
+  #orderstatus{
       font-size: 40px;
       color:#fff;
       text-shadow: 0 2px 7px rgba(0, 0, 0, .4);
@@ -53,13 +47,16 @@
   /* form Startar */
 
   .form{
+      position: relative;
+      bottom: 600px;
+      margin-left: 530px;
       
-      margin-right: 130px;
   }
 
   .form h3 {
+      
       font-size: 30px;
-      text-align: start;
+      text-align: center;
       font-weight: 700;
       letter-spacing: 1.3px;
       word-spacing: 3px;
@@ -107,7 +104,8 @@
       word-spacing: 3px;
       padding: 10px;
       width: 34%;
-      left: 43rem;
+      left: 21rem;
+      top: 1rem;
       position: relative;
       bottom: 65px;
       border-radius: 15px;

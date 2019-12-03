@@ -1,0 +1,171 @@
+*,*:after,*:before{
+    box-sizing: border-box;
+  }
+  
+  body {
+      background-color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  /* Checkout start */
+  
+  .checkout {
+      margin:2% auto;
+      max-width: 75%;
+      height: 600px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 19px 6px #ddd;
+      overflow: hidden; 
+  }
+  
+  /* info Start */
+  .info {
+      background: transparent;
+      z-index: 1000;
+      position: absolute;
+      top: 38px;
+      left: 205px;
+      float: left;
+  }
+  span{
+    font-size: 15px;
+    color:#fff;
+    text-shadow: 0 2px 7px rgba(0, 0, 0, .4);
+    letter-spacing: 2px;
+  }
+  
+     img {
+      width: 140px;
+      margin-top: 10%;
+      border-radius: 15px;
+  }
+
+  #orderstatus span{
+      font-size: 40px;
+      color:#fff;
+      text-shadow: 0 2px 7px rgba(0, 0, 0, .4);
+  }
+
+  /* Oranga färgen */ 
+  .colored {
+      background-color: #ffd45f;
+      width: 700px;
+      height: 610px;
+      position: relative;
+      top: 0;
+      left: -200px;
+      float: left;
+      display: block;
+  }
+  
+  /* form Startar */
+
+  form{
+      
+      margin-right: 130px;
+  }
+
+  .form h3 {
+      font-size: 30px;
+      text-align: start;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      word-spacing: 3px;
+      margin-top: 40px;
+      color: #ffd45f;
+   }
+
+  label {
+      text-align: center;
+      display: block;
+      color: #ffd45f;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-top: 30px;
+  }
+ 
+
+  input {
+      outline: none;
+      border: none;
+      background-color: white;
+      border-bottom: 2px solid #ddd;
+      width: 300px;
+      font-size: 14px;
+      padding-bottom: 7px;
+      font-weight: 600;
+      transition: all .5s ease-in;
+      display: block;
+      margin: auto;
+      color: grey;
+  }
+
+  input:focus {
+      border-bottom:2px solid #ffd45f;
+  }
+
+  button {
+      background-color: #ffd45f;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+      padding: 10px;
+      width: 34%;
+      left: 43rem;
+      position: relative;
+      bottom: 65px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all .2s ease-in;
+  }
+
+  button:hover{
+      background: orange;
+      color: white;
+  }
+
+  .form p {
+      color: orange;
+      font-size: 14px;
+      font-weight:normal;
+      text-align: center;
+      margin-top: 50px;
+  }
+
+  /* Media Query för mobil */ 
+  @media only screen and (max-width: 960px) {
+    .checkout{
+        height: 100%;
+    }
+
+    #orderstatus{
+        font-size: 30px;
+    }
+
+    .form h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    label{
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    input{
+        width: 200px;
+        margin-left: 10px;
+    }
+
+    button{
+        left: 20rem;
+    }
+
+
+
+    } 

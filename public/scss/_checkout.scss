@@ -1,10 +1,6 @@
-*,*:after,*:before{
-    box-sizing: border-box;
-  }
-  
+
   body {
       background-color: white;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   }
   
   /* Checkout start */
@@ -35,8 +31,9 @@
     letter-spacing: 2px;
   }
   
-     img {
-      width: 140px;
+     .productImage1, .productImage2, .productImage3, .productImage4, .productImage5, .productImage6{
+      height: 50px;
+      width: 40px;
       margin-top: 10%;
       border-radius: 15px;
   }
@@ -61,7 +58,7 @@
   
   /* form Startar */
 
-  form{
+  .form{
       
       margin-right: 130px;
   }
@@ -106,7 +103,7 @@
       border-bottom:2px solid #ffd45f;
   }
 
-  button {
+  .checkout-to-invoice-btn {
       background-color: #ffd45f;
       border: none;
       color: white;
@@ -124,7 +121,7 @@
       transition: all .2s ease-in;
   }
 
-  button:hover{
+  .checkout-to-invoice-btn:hover{
       background: orange;
       color: white;
   }
@@ -165,7 +162,5 @@
     button{
         left: 20rem;
     }
-
-
 
     } 

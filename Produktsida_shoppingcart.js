@@ -72,7 +72,11 @@ function setItemValueBtn2() {
   sessionStorage.setItem("SecondProductPrice", SecondProductPrice);
   sessionStorage.setItem("SecondProductHeader", SecondProductHeader);
   sessionStorage.setItem("SecondProductImg", SecondProductImg);
+
+  /* ---------------------- Change height to cart ---------------------------------- */
+  document.querySelector(".lista").style.height = "500px";
 }
+
 const SecondProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-2"
 );
@@ -99,6 +103,10 @@ function setItemValueBtn3() {
   sessionStorage.setItem("ThirdProductPrice", ThirdProductPrice);
   sessionStorage.setItem("ThirdProductHeader", ThirdProductHeader);
   sessionStorage.setItem("ThirdProductImg", ThirdProductImg);
+
+  /* ---------------------- Change height to cart ---------------------------------- */
+  document.querySelector(".lista").style.height = "500px";
+
 }
 const ThirdProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-3"
@@ -125,6 +133,9 @@ function setItemValueBtn4() {
   sessionStorage.setItem("FourthProductPrice", FourthProductPrice);
   sessionStorage.setItem("FourthProductHeader", FourthProductHeader);
   sessionStorage.setItem("FourthProductImg", FourthProductImg);
+
+  /* ---------------------- Change height to cart ---------------------------------- */
+  document.querySelector(".lista").style.height = "500px";
 }
 const FourthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-4"
@@ -152,6 +163,9 @@ function setItemValueBtn5() {
   sessionStorage.setItem("FifthProductPrice", FifthProductPrice);
   sessionStorage.setItem("FifthProductHeader", FifthProductHeader);
   sessionStorage.setItem("FifthProductImg", FifthProductImg);
+
+  /* ---------------------- Change height to cart ---------------------------------- */
+  document.querySelector(".lista").style.height = "500px";
 }
 const FifthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-5"
@@ -179,6 +193,9 @@ function setItemValueBtn6() {
   sessionStorage.setItem("SixthProductPrice", SixthProductPrice);
   sessionStorage.setItem("SixthProductHeader", SixthProductHeader);
   sessionStorage.setItem("SixthProductImg", SixthProductImg);
+
+  /* ---------------------- Change height to cart ---------------------------------- */
+  document.querySelector(".lista").style.height = "500px";
 }
 const SixthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-6"

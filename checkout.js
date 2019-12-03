@@ -49,11 +49,6 @@ function ShowData() {
 
 }
 
-/* -------------------- DOM EVENT---------------------- */
-document.addEventListener("DOMContentLoaded", function () {
-  ShowData();
-})
-
 
 /* ----------------- Invoice Button ------------------- */
 function invoiceBtn() {
@@ -92,3 +87,8 @@ function invoiceBtn() {
 }
 const checkoutInvoiceBtn = document.querySelector(".checkout-to-invoice-btn");
 checkoutInvoiceBtn.addEventListener("click", invoiceBtn);
+
+/* -------------------- DOM EVENT---------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  ShowData();
+})

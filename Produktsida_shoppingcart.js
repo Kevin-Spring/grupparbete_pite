@@ -42,6 +42,9 @@ function setItemValueBtn1() {
   sessionStorage.setItem("FirstProductHeader", FirstProductHeader);
   sessionStorage.setItem("FirstProductImg", FirstProductImg);
 
+  /* Change height to cart */
+  document.querySelector(".lista").style.height = "500px";
+
 }
 const FirstProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-1"

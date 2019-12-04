@@ -17,6 +17,31 @@
 /*     let customerNr = document.querySelector(".customernr");
     customerNr.innerHTML = "Customer nr: " + Math.floor(Math.random() * 10001); */
 
+/* ----------- Gets the customer information ---------- */
+    const getFirstName = sessionStorage.getItem("firstName");
+    const getLastName = sessionStorage.getItem("lastName");
+    const getCompany = sessionStorage.getItem("company");
+    const getPhone = sessionStorage.getItem("phone");
+    const getAdress = sessionStorage.getItem("adress");
+    const getPostnummer = sessionStorage.getItem("postnummer");
+
+/* ---------- Puts the customer information innthe HTML ------- */
+    function fetchingCustomer () {
+        const NameHTML = document.querySelector(".nameHTML");
+        const companyHTML = document.querySelector(".companyHTML");
+        const phoneHTML = document.querySelector(".phoneHTML");
+        const adressHTML = document.querySelector(".adressHTML");
+        const postnummerHTML = document.querySelector(".postnummerHTML");
+
+        NameHTML.innerHTML = getFirstName + " " + getLastName;
+        companyHTML.innerHTML = getCompany;
+        phoneHTML.innerHTML = getPhone;
+        adressHTML.innerHTML = getAdress;
+        postnummerHTML.innerHTML = getPostnummer;
+        
+    }
+    fetchingCustomer();
+
 
 
 

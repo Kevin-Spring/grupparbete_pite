@@ -67,6 +67,13 @@ function invoiceBtn() {
   const productName5 = document.querySelector(".productheader5").innerHTML;
   const productName6 = document.querySelector(".productheader6").innerHTML;
 
+  const firstName = document.querySelector(".form__input__firstname").value;
+  const lastName = document.querySelector(".form__input__lastname").value;
+  const company = document.querySelector(".form__input__company").value;
+  const phone = document.querySelector(".form__input__phone").value;
+  const adress = document.querySelector(".form__input__adress").value;
+  const postnummer = document.querySelector(".form__input__postnummer").value;
+
   sessionStorage.setItem("productPrice1", productPrice1);
   sessionStorage.setItem("productPrice2", productPrice2);
   sessionStorage.setItem("productPrice3", productPrice3);
@@ -80,6 +87,13 @@ function invoiceBtn() {
   sessionStorage.setItem("productName4", productName4);
   sessionStorage.setItem("productName5", productName5);
   sessionStorage.setItem("productName6", productName6);
+
+  sessionStorage.setItem("firstName", firstName);
+  sessionStorage.setItem("lastName", lastName);
+  sessionStorage.setItem("company", company);
+  sessionStorage.setItem("phone", phone);
+  sessionStorage.setItem("adress", adress);
+  sessionStorage.setItem("postnummer", postnummer);
 
 
   /* window.document.location="kevin_invoice.html"; */

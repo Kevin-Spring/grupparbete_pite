@@ -74,7 +74,7 @@ function setItemValueBtn2() {
   sessionStorage.setItem("SecondProductImg", SecondProductImg);
 
   /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "500px";
+  document.querySelector(".lista").style.height = "600px";
 }
 
 const SecondProductBtn = document.querySelector(
@@ -105,7 +105,7 @@ function setItemValueBtn3() {
   sessionStorage.setItem("ThirdProductImg", ThirdProductImg);
 
   /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "500px";
+  document.querySelector(".lista").style.height = "600px";
 
 }
 const ThirdProductBtn = document.querySelector(
@@ -135,7 +135,7 @@ function setItemValueBtn4() {
   sessionStorage.setItem("FourthProductImg", FourthProductImg);
 
   /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "500px";
+  document.querySelector(".lista").style.height = "600px";
 }
 const FourthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-4"
@@ -165,7 +165,7 @@ function setItemValueBtn5() {
   sessionStorage.setItem("FifthProductImg", FifthProductImg);
 
   /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "500px";
+  document.querySelector(".lista").style.height = "700px";
 }
 const FifthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-5"
@@ -195,7 +195,7 @@ function setItemValueBtn6() {
   sessionStorage.setItem("SixthProductImg", SixthProductImg);
 
   /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "500px";
+  document.querySelector(".lista").style.height = "700px";
 }
 const SixthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-6"

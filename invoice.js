@@ -25,7 +25,7 @@
     const getAdress = sessionStorage.getItem("adress");
     const getPostnummer = sessionStorage.getItem("postnummer");
 
-/* ---------- Puts the customer information innthe HTML ------- */
+/* ---------- Puts the customer information in the HTML ------- */
     function fetchingCustomer () {
         const NameHTML = document.querySelector(".nameHTML");
         const companyHTML = document.querySelector(".companyHTML");

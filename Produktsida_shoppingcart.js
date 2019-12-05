@@ -14,25 +14,25 @@ function shoppingcartCounter() {
   counter.innerHTML = clickCount;
 
   if(clickCount == 1){
-    document.querySelector("#popup-knapp").style.marginTop = "15.5rem";
+    document.querySelector(".linee").style.marginTop = "-1.5rem";
   }
-
   else if(clickCount == 2){
-    document.querySelector("#popup-knapp").style.marginTop = "14.5rem";
+    document.querySelector(".linee").style.marginTop = "-2.5rem";
   }
-  
   else if(clickCount == 3){
-    document.querySelector("#popup-knapp").style.marginTop = "13.3rem";
+    document.querySelector(".linee").style.marginTop = "-4rem";
   }
   else if(clickCount == 4){
-    document.querySelector("#popup-knapp").style.marginTop = "11rem";
+    document.querySelector(".linee").style.marginTop = "-5rem";
   }
   else if(clickCount == 5){
-    document.querySelector("#popup-knapp").style.marginTop = "11rem";
+    document.querySelector(".linee").style.marginTop = "-6.5rem";
+  }
+  else if(clickCount == 6){
+    document.querySelector(".linee").style.marginTop= "-7.5rem";
   }
   else{
-    document.querySelector(".lista").style.height = "400px";
-    document.querySelector("#popup-knapp").style.marginTop = "12.5rem";
+    document.querySelector(".lista").style.height = "700px";
   }
 }
 

@@ -4,6 +4,7 @@
 }
 .invoice-box {
     max-width: 800px;
+    height: 120vh;
     margin: auto;
     padding: 35px;
     border: 1px solid #eee;
@@ -59,6 +60,13 @@
     border-top: 2px solid #eee;
     font-weight: bold;
     text-align: right;
+}
+
+.print{
+padding: 10px;
+width: 50px;
+float: right;
+margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 700px) {

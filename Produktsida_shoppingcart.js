@@ -12,12 +12,36 @@ function shoppingcartCounter() {
   const counter = document.querySelector(".counter");
   clickCount = clickCount + 1;
   counter.innerHTML = clickCount;
+
+  if(clickCount == 1){
+    document.querySelector("#popup-knapp").style.marginTop = "15.5rem";
+  }
+
+  else if(clickCount == 2){
+    document.querySelector("#popup-knapp").style.marginTop = "14.5rem";
+  }
+  
+  else if(clickCount == 3){
+    document.querySelector("#popup-knapp").style.marginTop = "13.3rem";
+  }
+  else if(clickCount == 4){
+    document.querySelector("#popup-knapp").style.marginTop = "11rem";
+  }
+  else if(clickCount == 5){
+    document.querySelector("#popup-knapp").style.marginTop = "11rem";
+  }
+  else{
+    document.querySelector(".lista").style.height = "400px";
+    document.querySelector("#popup-knapp").style.marginTop = "12.5rem";
+  }
 }
 
 const counterBtn = document.querySelectorAll("#shoppingcart-counter");
 for (let i = 0; i < counterBtn.length; i++) {
   counterBtn[i].addEventListener("click", shoppingcartCounter);
 }
+
+
 
 /* ---------------------FUNKTION FÖR KNAPP 1 I PRODUKTLISTA------------------------ */
 
@@ -41,9 +65,6 @@ function setItemValueBtn1() {
   sessionStorage.setItem("FirstProductPrice", FirstProductPrice);
   sessionStorage.setItem("FirstProductHeader", FirstProductHeader);
   sessionStorage.setItem("FirstProductImg", FirstProductImg);
-
-  /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "500px";
 
 }
 const FirstProductBtn = document.querySelector(
@@ -73,8 +94,6 @@ function setItemValueBtn2() {
   sessionStorage.setItem("SecondProductHeader", SecondProductHeader);
   sessionStorage.setItem("SecondProductImg", SecondProductImg);
 
-  /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "600px";
 }
 
 const SecondProductBtn = document.querySelector(
@@ -104,9 +123,6 @@ function setItemValueBtn3() {
   sessionStorage.setItem("ThirdProductHeader", ThirdProductHeader);
   sessionStorage.setItem("ThirdProductImg", ThirdProductImg);
 
-  /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "600px";
-
 }
 const ThirdProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-3"
@@ -134,8 +150,6 @@ function setItemValueBtn4() {
   sessionStorage.setItem("FourthProductHeader", FourthProductHeader);
   sessionStorage.setItem("FourthProductImg", FourthProductImg);
 
-  /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "600px";
 }
 const FourthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-4"
@@ -163,9 +177,6 @@ function setItemValueBtn5() {
   sessionStorage.setItem("FifthProductPrice", FifthProductPrice);
   sessionStorage.setItem("FifthProductHeader", FifthProductHeader);
   sessionStorage.setItem("FifthProductImg", FifthProductImg);
-
-  /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "700px";
 }
 const FifthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-5"
@@ -193,9 +204,6 @@ function setItemValueBtn6() {
   sessionStorage.setItem("SixthProductPrice", SixthProductPrice);
   sessionStorage.setItem("SixthProductHeader", SixthProductHeader);
   sessionStorage.setItem("SixthProductImg", SixthProductImg);
-
-  /* ---------------------- Change height to cart ---------------------------------- */
-  document.querySelector(".lista").style.height = "700px";
 }
 const SixthProductBtn = document.querySelector(
   ".cake__gridwrapper__item-btn-6"

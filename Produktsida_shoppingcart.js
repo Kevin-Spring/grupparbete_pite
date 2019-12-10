@@ -36,7 +36,7 @@ function shoppingcartCounter() {
   }
 }
 
-const counterBtn = document.querySelectorAll("#shoppingcart-counter");
+const counterBtn = document.querySelectorAll(".shoppingcart-counter");
 for (let i = 0; i < counterBtn.length; i++) {
   counterBtn[i].addEventListener("click", shoppingcartCounter);
 }

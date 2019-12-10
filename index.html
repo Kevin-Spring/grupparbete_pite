@@ -17,168 +17,174 @@
 </head>
 
 
-
-<!--Start of Navigerings bar med logo-->
-<nav>
-  <div class="logo"><a href="#" class="logo">
-      <h4>WebBakery</h4>
-    </a>
-  </div>
-  <ul class="nav-links">
-    <li>
-      <a href="#">Hem</a>
-    </li>
-    <li>
-      <a href="#section1">Bakelser</a>
-    </li>
-    <li>
-      <a href="#section2">Beställning</a>
-    </li>
-    <li>
-      <a href="#footer__container">Om oss</a>
-    </li>
-    <div class="kundvagn">
-      <div class="lista">
-        <h2 id="popup-heading">Produkter</h2>
-        <div class="shoppingcart__Items"></div>
-        <div class="linee"></div>
-        <button id="popup-knapp">Checkout</button>
+<body>
+  <!--Start of Navigerings bar med logo-->
+  <nav>
+    <div class="logo"><a href="#" class="logo">
+        <h4>WebBakery</h4>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">Hem</a>
+      </li>
+      <li>
+        <a href="#section1">Bakelser</a>
+      </li>
+      <li>
+        <a href="#section2">Beställning</a>
+      </li>
+      <li>
+        <a href="#footer__container">Om oss</a>
+      </li>
+      <div class="kundvagn">
+        <div class="lista">
+          <h2 id="popup-heading">Produkter</h2>
+          <div class="shoppingcart__Items"></div>
+          <div class="linee"></div>
+          <button id="popup-knapp">Checkout</button>
+        </div>
+        <i class="fas fa-shopping-cart"></i>
+        <span class="counter"></span>
       </div>
-      <i class="fas fa-shopping-cart"></i>
-      <span class="counter"></span>
+    </ul>
+    <!--End of Navigerings bar med logo-->
+
+    <!-- Start of burger linjerna-->
+    <div class="burger">
+      <div class="linje1"></div>
+      <div class="linje2"></div>
+      <div class="linje3"></div>
     </div>
-  </ul>
-  <!--End of Navigerings bar med logo-->
+  </nav>
+  <!-- End of burger linjerna-->
 
-  <!-- Start of burger linjerna-->
-  <div class="burger">
-    <div class="linje1"></div>
-    <div class="linje2"></div>
-    <div class="linje3"></div>
-  </div>
-</nav>
-<!-- End of burger linjerna-->
+  <!-- Start of Header -->
 
-<!-- Start of Header -->
+  <header>
+    <div id="header-img"></div>
 
-<header>
-  <div id="header-img"></div>
-
-  <div class="container">
-    <span class="text1">Välkommen till</span>
-    <span class="text2">Web bakery</span>
-    <button id="bakelse-knapp"><a id="design-huvudknapp" href="#section1">Bakelser</a></button>
-  </div>
-</header>
-<!-- End of Header -->
+    <div class="container">
+      <span class="text1">Välkommen till</span>
+      <span class="text2">Web bakery</span>
+      <button id="bakelse-knapp"><a id="design-huvudknapp" href="#section1">Bakelser</a></button>
+    </div>
+  </header>
+  <!-- End of Header -->
 
 
 
-<!-- Section Wrapper for Section 1 -->
-<section id="section1">
-  <!-- Header of Products -->
-  <div>
-    <h2 class="cake__header">CAKES & PASTERIES</h2>
-  </div>
-  <!-- Cake Products Wrapper -->
-  <div class="cake__gridwrapper">
-    <!-- Cake 1 -->
-    <div class="cake__gridwrapper__item-1">
-      <img class="cake__gridwrapper__item-img-1" src="public/Bilder/shallow-focus.jpg" alt="">
-      <h3 class="cake__gridwrapper__item-h3-1">Party Cake</h3>
-      <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-        illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
-      <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
-      <p class="cake__gridwrapper__item-price-1">145</p>
-      <button id="shoppingcart-counter" class="cake__gridwrapper__item-btn-1"><i class="fas fa-cart-plus"></i></button>
+  <!-- Section Wrapper for Section 1 -->
+  <section id="section1">
+    <!-- Header of Products -->
+    <div>
+      <h2 class="cake__header">CAKES & PASTERIES</h2>
     </div>
-    <!-- Cake 2 -->
-    <div class="cake__gridwrapper__item-2">
-      <img class="cake__gridwrapper__item-img-2" src="public/Bilder/white-icing-cover-cake.jpg" alt="">
-      <h3 class="cake__gridwrapper__item-h3-2">Flowery Dream Cake</h3>
-      <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-        illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
-      <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
-      <p class="cake__gridwrapper__item-price-2">980</p>
-      <button id="shoppingcart-counter" class="cake__gridwrapper__item-btn-2"><i class="fas fa-cart-plus"></i></button>
+    <!-- Cake Products Wrapper -->
+    <div class="cake__gridwrapper">
+      <!-- Cake 1 -->
+      <div class="cake__gridwrapper__item-1">
+        <img class="cake__gridwrapper__item-img-1" src="public/Bilder/shallow-focus.jpg" alt="">
+        <h3 class="cake__gridwrapper__item-h3-1">Party Cake</h3>
+        <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+          illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
+        <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
+        <p class="cake__gridwrapper__item-price-1">145</p>
+        <button class="cake__gridwrapper__item-btn-1 shoppingcart-counter"><i
+            class="fas fa-cart-plus"></i></button>
+      </div>
+      <!-- Cake 2 -->
+      <div class="cake__gridwrapper__item-2">
+        <img class="cake__gridwrapper__item-img-2" src="public/Bilder/white-icing-cover-cake.jpg" alt="">
+        <h3 class="cake__gridwrapper__item-h3-2">Flowery Dream Cake</h3>
+        <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+          illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
+        <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
+        <p class="cake__gridwrapper__item-price-2">980</p>
+        <button class="cake__gridwrapper__item-btn-2 shoppingcart-counter"><i
+            class="fas fa-cart-plus"></i></button>
+      </div>
+      <!-- Cake 3 -->
+      <div class="cake__gridwrapper__item-3">
+        <img class="cake__gridwrapper__item-img-3" src="public/Bilder/cake-chocolate.jpg" alt="">
+        <h3 class="cake__gridwrapper__item-h3-3">Chocolate Cake</h3>
+        <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+          illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
+        <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
+        <p class="cake__gridwrapper__item-price-3">185</p>
+        <button class="cake__gridwrapper__item-btn-3 shoppingcart-counter"><i
+            class="fas fa-cart-plus"></i></button>
+      </div>
+      <!-- Cake 4 -->
+      <div class="cake__gridwrapper__item-4">
+        <img class="cake__gridwrapper__item-img-4" src="public/Bilder/cake-chocolate-cream-crepe.jpg" alt="">
+        <h3 class="cake__gridwrapper__item-h3-4">Orange & Lime Crepe Cake</h3>
+        <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+          illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
+        <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
+        <p class="cake__gridwrapper__item-price-4">195</p>
+        <button class="cake__gridwrapper__item-btn-4 shoppingcart-counter"><i
+            class="fas fa-cart-plus"></i></button>
+      </div>
+      <!-- Cake 5 -->
+      <div class="cake__gridwrapper__item-5">
+        <img class="cake__gridwrapper__item-img-5" src="public/Bilder/cake-with-flower-decor-small.jpg" alt="">
+        <h3 class="cake__gridwrapper__item-h3-5">White Icing Cake</h3>
+        <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+          illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
+        <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
+        <p class="cake__gridwrapper__item-price-5">600</p>
+        <button class="cake__gridwrapper__item-btn-5 shoppingcart-counter"><i
+            class="fas fa-cart-plus"></i></button>
+      </div>
+      <!-- Cake 6 -->
+      <div class="cake__gridwrapper__item-6">
+        <img class="cake__gridwrapper__item-img-6" src="public/Bilder/naked-strawberry-cake-in-open-window.jpg" alt="">
+        <h3 class="cake__gridwrapper__item-h3-6">Strawberry Cake</h3>
+        <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+          illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
+        <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
+        <p class="cake__gridwrapper__item-price-6">240</p>
+        <button class="cake__gridwrapper__item-btn-6 shoppingcart-counter"><i
+            class="fas fa-cart-plus"></i></button>
+      </div>
     </div>
-    <!-- Cake 3 -->
-    <div class="cake__gridwrapper__item-3">
-      <img class="cake__gridwrapper__item-img-3" src="public/Bilder/cake-chocolate.jpg" alt="">
-      <h3 class="cake__gridwrapper__item-h3-3">Chocolate Cake</h3>
-      <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-        illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
-      <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
-      <p class="cake__gridwrapper__item-price-3">185</p>
-      <button id="shoppingcart-counter" class="cake__gridwrapper__item-btn-3"><i class="fas fa-cart-plus"></i></button>
-    </div>
-    <!-- Cake 4 -->
-    <div class="cake__gridwrapper__item-4">
-      <img class="cake__gridwrapper__item-img-4" src="public/Bilder/cake-chocolate-cream-crepe.jpg" alt="">
-      <h3 class="cake__gridwrapper__item-h3-4">Orange & Lime Crepe Cake</h3>
-      <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-        illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
-      <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
-      <p class="cake__gridwrapper__item-price-4">195</p>
-      <button id="shoppingcart-counter" class="cake__gridwrapper__item-btn-4"><i class="fas fa-cart-plus"></i></button>
-    </div>
-    <!-- Cake 5 -->
-    <div class="cake__gridwrapper__item-5">
-      <img class="cake__gridwrapper__item-img-5" src="public/Bilder/cake-with-flower-decor-small.jpg" alt="">
-      <h3 class="cake__gridwrapper__item-h3-5">White Icing Cake</h3>
-      <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-        illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
-      <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
-      <p class="cake__gridwrapper__item-price-5">600</p>
-      <button id="shoppingcart-counter" class="cake__gridwrapper__item-btn-5"><i class="fas fa-cart-plus"></i></button>
-    </div>
-    <!-- Cake 6 -->
-    <div class="cake__gridwrapper__item-6">
-      <img class="cake__gridwrapper__item-img-6" src="public/Bilder/naked-strawberry-cake-in-open-window.jpg" alt="">
-      <h3 class="cake__gridwrapper__item-h3-6">Strawberry Cake</h3>
-      <p class="cake__gridwrapper__item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-        illum corporis itaque fugiat, esse odit impedit, iure dolores quam exercitationem amet?</p>
-      <h3 class="cake__gridwrapper__item-description-price">Pris:</h3>
-      <p class="cake__gridwrapper__item-price-6">240</p>
-      <button id="shoppingcart-counter" class="cake__gridwrapper__item-btn-6"><i class="fas fa-cart-plus"></i></button>
-    </div>
-  </div>
-  <!-- End of Cake Wrapper -->
-</section>
-<!-- End of Section 1 -->
-<hr>
-<!-- Start of Section 2 -->
-<section id="section2">
-  <div class="contact-form">
-    <h1>Orders</h1>
-    <h2>Place your special order, make sure to attach a picture if you would like to!</h2>
-    <div class="textbox">
-      <label>Name</label>
-      <input type="text" name="" value="" placeholder="Fill in name">
-    </div>
+    <!-- End of Cake Wrapper -->
+  </section>
+  <!-- End of Section 1 -->
+  <hr>
+  <!-- Start of Section 2 -->
+  <section id="section2">
+    <div class="contact-form">
+      <h1>Orders</h1>
+      <h2>Place your special order, make sure to attach a picture if you would like to!</h2>
+      <div class="textbox">
+        <label>Name</label>
+        <input type="text" value="" placeholder="Fill in name">
+      </div>
 
-    <div class="textbox">
-      <label>E-mail </label>
-      <input type="text" name="" value="" placeholder="name@example.com">
-    </div>
+      <div class="textbox">
+        <label>E-mail </label>
+        <input type="text" value="" placeholder="name@example.com">
+      </div>
 
-    <div class="textbox">
-      <label>Telephone</label>
-      <input type="text" name="" value="" placeholder="Fill in phone number">
-    </div>
+      <div class="textbox">
+        <label>Telephone</label>
+        <input type="text" value="" placeholder="Fill in phone number">
+      </div>
 
-    <div class="textbox">
-      <label>Message</label>
-      <textarea name="name"> </textarea>
+      <div class="textbox">
+        <label>Message</label>
+        <textarea name="name"> </textarea>
+      </div>
+      <a class="contact-form-btn"> SEND </a>
     </div>
-    <a class="contact-form-btn"> SEND </a>
-  </div>
-</section>
+  </section>
 
-<!-- End of Section 2 -->
-<hr>
-<!-- Start of Footer -->
-<!-- <footer class="footer">
+  <!-- End of Section 2 -->
+  <hr>
+  <!-- Start of Footer -->
+  <!-- <footer class="footer">
 
   <div class="footer__container">
     <h2 id="om_oss">about us</h2>
@@ -220,10 +226,7 @@
 </div>
 </footer> -->
 
-<!-- End of Footer -->
-
-
-<body>
+  <!-- End of Footer -->
 
   <footer class="footer-distributed">
 

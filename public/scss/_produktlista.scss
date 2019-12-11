@@ -55,7 +55,7 @@
 .cake__gridwrapper__item-h3-6 {
   font-family: "Gothic A1", sans-serif;
   font-weight: 400;
-  color: #ef7a85;
+  color: orange;
   font-size: 1.4rem;
   letter-spacing: 0.3125rem;
   text-align: center;
@@ -64,6 +64,8 @@
 }
 .cake__gridwrapper__item-description {
   text-align: center;
+  font-weight: 500;
+  color: grey;
 }
 .cake__gridwrapper__item-description-price {
   text-align: center;
@@ -100,7 +102,7 @@
   font-size: 1.875rem;
   cursor: pointer;
   outline: inherit;
-  color: #ef7a85;
+  color: orange;
 }
 .cake__gridwrapper__item-btn-1:active,
 .cake__gridwrapper__item-btn-2:active,
@@ -108,5 +110,5 @@
 .cake__gridwrapper__item-btn-4:active,
 .cake__gridwrapper__item-btn-5:active,
 .cake__gridwrapper__item-btn-6:active {
-  color: #d16666;
+  color: orange;
 }

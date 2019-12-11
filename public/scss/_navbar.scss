@@ -57,6 +57,11 @@ nav {
   border-radius: 10px;
 }
 
+.lista:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .kundvagn:hover > .lista {
   position: absolute;
   transform: translateY(0%);

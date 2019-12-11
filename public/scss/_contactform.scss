@@ -1,7 +1,7 @@
 .contact-form {
   width: 85%;
-  max-width: 600px;
-  background: #fae8eb;
+  max-width: 900px;
+  background: white;
   position: relative;
   left: 50%;
   transform: translate(-50%, 12%);
@@ -10,17 +10,13 @@
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 0 20px #000000b3;
-  font-family: inherit;
 }
+
 .contact-form h1 {
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 0.1em;
 }
-.contact-form h2 {
-  margin-top: 0;
-  font-size: 16px;
-  font-weight: 100;
-}
+
 .textbox {
   border: 1px solid gray;
   margin: 8px 0;
@@ -28,6 +24,7 @@
   border-radius: 8px;
   font-weight: 100;
 }
+
 .textbox label {
   display: block;
   text-align: left;
@@ -40,17 +37,16 @@
 .textbox textarea {
   width: 100%;
   border: none;
-  background: 0 0;
-  outline: 0;
   font-size: 18px;
   margin-top: 6px;
   font-family: "Gothic A1", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
+  color: grey;
 }
 .contact-form-btn {
   display: inline-block;
   background: #f7de68;
-  padding: 14px 0;
+  padding: 14px;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
@@ -58,7 +54,9 @@
   width: 100%;
   font-family: "Gothic A1", sans-serif;
   letter-spacing: 0.1em;
+  border-radius: 10px;
 }
 .contact-form-btn:hover {
-  background-color: #ef7a85;
+  background-color: orange;
+  transition: 0.3s ease-in;
 }

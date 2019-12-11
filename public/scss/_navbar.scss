@@ -57,15 +57,16 @@ nav {
   border-radius: 10px;
 }
 
+.lista:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .kundvagn:hover > .lista {
   position: absolute;
   transform: translateY(0%);
 }
-.linee {
-  position: relative;
-  top: 265px;
-  border-bottom: 2px solid orange;
-}
+
 #popup-knapp {
   margin: 0 auto;
   margin-top: 16.9rem;
@@ -79,12 +80,14 @@ nav {
   font-weight: 700;
   font-size: 15px;
 }
+
 #popup-knapp:hover {
   background: orange;
   color: white;
   cursor: pointer;
   transition: 0.3s all;
 }
+
 #popup-heading {
   color: white;
   text-align: center;

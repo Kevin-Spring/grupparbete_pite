@@ -21,8 +21,8 @@
       z-index: 1000;
       position: absolute;
       top: 38px;
-      left: 205px;
-      float: left;
+      left: 220px;
+      
   }
 
 
@@ -40,8 +40,8 @@
       position: relative;
       top: 0;
       left: -200px;
-      float: left;
-      display: block;
+    
+      
   }
   
   /* form Startar */
@@ -104,7 +104,7 @@
       word-spacing: 3px;
       padding: 10px;
       width: 34%;
-      left: 21rem;
+      left: 20rem;
       top: 1rem;
       position: relative;
       bottom: 65px;
@@ -127,32 +127,5 @@
   }
 
   /* Media Query för mobil */ 
-  @media only screen and (max-width: 960px) {
-    .checkout{
-        height: 100%;
-    }
+  /* @media only screen and (min-width: 641px) and (max-width: 1224px) */
 
-    #orderstatus{
-        font-size: 30px;
-    }
-
-    .form h3{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    label{
-        text-align: start;
-        margin-left: 10px;
-    }
-
-    input{
-        width: 200px;
-        margin-left: 10px;
-    }
-
-    button{
-        left: 20rem;
-    }
-
-    } 

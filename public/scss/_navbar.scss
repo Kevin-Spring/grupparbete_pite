@@ -4,8 +4,12 @@ nav {
   align-items: center;
   height: 8vh;
   background-color: #ffd45f;
-  z-index: 10000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
+
 .logo {
   color: pink;
   text-transform: uppercase;

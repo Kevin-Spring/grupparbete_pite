@@ -67,12 +67,10 @@
     transition: all 0.3s ease-in;
   }
 
-  .nav-links li {
-    opacity: 0;
-  }
   .burger {
     display: block;
   }
+
   .nav-active {
     transform: translateX(0);
   }

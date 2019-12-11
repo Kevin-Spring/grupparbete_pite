@@ -13,25 +13,25 @@ function shoppingcartCounter() {
   clickCount = clickCount + 1;
   counter.innerHTML = clickCount;
 
-  if(clickCount == 1){
+  if (clickCount == 1) {
     document.querySelector(".linee").style.marginTop = "-1.5rem";
   }
-  else if(clickCount == 2){
+  else if (clickCount == 2) {
     document.querySelector(".linee").style.marginTop = "-2.5rem";
   }
-  else if(clickCount == 3){
+  else if (clickCount == 3) {
     document.querySelector(".linee").style.marginTop = "-4rem";
   }
-  else if(clickCount == 4){
+  else if (clickCount == 4) {
     document.querySelector(".linee").style.marginTop = "-5rem";
   }
-  else if(clickCount == 5){
+  else if (clickCount == 5) {
     document.querySelector(".linee").style.marginTop = "-6.5rem";
   }
-  else if(clickCount == 6){
-    document.querySelector(".linee").style.marginTop= "-7.5rem";
+  else if (clickCount == 6) {
+    document.querySelector(".linee").style.marginTop = "-7.5rem";
   }
-  else{
+  else {
     document.querySelector(".lista").style.height = "700px";
   }
 }
@@ -55,13 +55,13 @@ function setItemValueBtn1() {
   const FirstProductImg = document.querySelector(
     ".cake__gridwrapper__item-img-1"
   ).src;
-    
-    /* --------------------- Add Item 1 to Cart ----------------------------------- */
-    const addItemtoCart = document.querySelector(".shoppingcart__Items");
-    const addItemtoCartLi = document.createElement("li");
-    addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
-    addItemtoCartLi.innerHTML = FirstProductHeader + ": " + FirstProductPrice + ":-";
-  
+
+  /* --------------------- Add Item 1 to Cart ----------------------------------- */
+  const addItemtoCart = document.querySelector(".shoppingcart__Items");
+  const addItemtoCartLi = document.createElement("li");
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class", "shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = FirstProductHeader + ": " + FirstProductPrice + ":-";
+
   sessionStorage.setItem("FirstProductPrice", FirstProductPrice);
   sessionStorage.setItem("FirstProductHeader", FirstProductHeader);
   sessionStorage.setItem("FirstProductImg", FirstProductImg);
@@ -84,11 +84,11 @@ function setItemValueBtn2() {
     ".cake__gridwrapper__item-img-2"
   ).src;
 
-    /* --------------------- Add Item 2 to Cart ---------------------- */
-    const addItemtoCart = document.querySelector(".shoppingcart__Items");
-    const addItemtoCartLi = document.createElement("li");
-    addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
-    addItemtoCartLi.innerHTML = SecondProductHeader + ": " +  SecondProductPrice + ":-";
+  /* --------------------- Add Item 2 to Cart ---------------------- */
+  const addItemtoCart = document.querySelector(".shoppingcart__Items");
+  const addItemtoCartLi = document.createElement("li");
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class", "shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = SecondProductHeader + ": " + SecondProductPrice + ":-";
 
   sessionStorage.setItem("SecondProductPrice", SecondProductPrice);
   sessionStorage.setItem("SecondProductHeader", SecondProductHeader);
@@ -116,8 +116,8 @@ function setItemValueBtn3() {
   /* --------------------- Add Item 3 to Cart ---------------------- */
   const addItemtoCart = document.querySelector(".shoppingcart__Items");
   const addItemtoCartLi = document.createElement("li");
-  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
-  addItemtoCartLi.innerHTML = ThirdProductHeader + ": " +  ThirdProductPrice + ":-";
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class", "shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = ThirdProductHeader + ": " + ThirdProductPrice + ":-";
 
   sessionStorage.setItem("ThirdProductPrice", ThirdProductPrice);
   sessionStorage.setItem("ThirdProductHeader", ThirdProductHeader);
@@ -143,8 +143,8 @@ function setItemValueBtn4() {
   /* --------------------- Add Item 4 to Cart ---------------------- */
   const addItemtoCart = document.querySelector(".shoppingcart__Items");
   const addItemtoCartLi = document.createElement("li");
-  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
-  addItemtoCartLi.innerHTML = FourthProductHeader + ": " +  FourthProductPrice + ":-";
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class", "shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = FourthProductHeader + ": " + FourthProductPrice + ":-";
 
   sessionStorage.setItem("FourthProductPrice", FourthProductPrice);
   sessionStorage.setItem("FourthProductHeader", FourthProductHeader);
@@ -171,8 +171,8 @@ function setItemValueBtn5() {
   /* --------------------- Add Item 5 to Cart ---------------------- */
   const addItemtoCart = document.querySelector(".shoppingcart__Items");
   const addItemtoCartLi = document.createElement("li");
-  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
-  addItemtoCartLi.innerHTML = FifthProductHeader + ": " +  FifthProductPrice + ":-";
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class", "shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = FifthProductHeader + ": " + FifthProductPrice + ":-";
 
   sessionStorage.setItem("FifthProductPrice", FifthProductPrice);
   sessionStorage.setItem("FifthProductHeader", FifthProductHeader);
@@ -198,8 +198,8 @@ function setItemValueBtn6() {
   /* --------------------- Add Item 6 to Cart ---------------------- */
   const addItemtoCart = document.querySelector(".shoppingcart__Items");
   const addItemtoCartLi = document.createElement("li");
-  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class","shoppingcart__Items-List");
-  addItemtoCartLi.innerHTML = SixthProductHeader + ": " +  SixthProductPrice + ":-";
+  addItemtoCart.appendChild(addItemtoCartLi).setAttribute("class", "shoppingcart__Items-List");
+  addItemtoCartLi.innerHTML = SixthProductHeader + ": " + SixthProductPrice + ":-";
 
   sessionStorage.setItem("SixthProductPrice", SixthProductPrice);
   sessionStorage.setItem("SixthProductHeader", SixthProductHeader);

@@ -1,7 +1,7 @@
 
 .footer-distributed{
-	background-color: orange;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	background-image: url(/public/Bilder/closeup-photo-of-doughnuts-1191639.jpg);
+	background-position: top;
 	width: 100%;
 	text-align: left;
 	font-weight: bold 16px;
@@ -31,13 +31,13 @@
  
  
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  #ffd45f;
     display: grid;
 }
 
 .footer-links a:hover{
     opacity: 0.5;
-    color: grey;
+    color: white;
     transition: all 0.3s ease-in-out;
 }
  

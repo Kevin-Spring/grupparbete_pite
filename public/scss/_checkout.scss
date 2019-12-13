@@ -3,6 +3,14 @@
       background-color: white;
   }
   
+  .rubrik-checkout{
+      text-align: center;
+      font-size: 30px;
+      color: #ffd45f;
+      background: white;
+      text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  }
+
   /* Checkout start */
   
   .checkout {
@@ -18,9 +26,9 @@
   /* info Start */
   .info {
       background: transparent;
-      z-index: 1000;
+      z-index: 100;
       position: absolute;
-      top: 38px;
+      top: 100px;
       left: 220px;
       
   }
@@ -103,8 +111,8 @@
       letter-spacing: 1px;
       word-spacing: 3px;
       padding: 10px;
-      width: 34%;
-      left: 20rem;
+    /* width: 34%; */
+      left: 29rem;
       top: 1rem;
       position: relative;
       bottom: 65px;
@@ -126,6 +134,97 @@
       margin-top: 45px;
   }
 
-  /* Media Query för mobil */ 
-  /* @media only screen and (min-width: 641px) and (max-width: 1224px) */
+  /* Media Query för mobil */
+  @media only screen and (max-width: 600px){
+    .rubrik-checkout{
+        text-align: center;
+        font-size: 20px;
+        color: #ffd45f;
+        background: white;
+        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
+  
+    /* Checkout start */
+    
+    .checkout {
+        margin: 2% auto;
+        max-width: 75%;
+        height: 540px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 19px 6px #ddd;
+        overflow: hidden; 
+    }
+    
+    /* info Start */
+    .info {
+        background: transparent;
+        z-index: 100;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        
+    }
+  
+  
+    #orderstatus{
+        font-size: 30px;
+        color:#fff;
+        text-shadow: 0 2px 7px rgba(0, 0, 0, .4);
+        margin-bottom: 10px;
+    }
+  
+    /* Oranga färgen */ 
+    .colored {
+        background-color: #ffd45f;
+        width: 700px;
+        height: 610px;
+        position: relative;
+        top: 0;
+        left: -200px;
+      
+        
+    }
+    
+    /* form Startar */
+  
+    .form{
+        position: relative;
+        bottom: 600px;
+        margin-left: 530px;
+        
+    }
+   
+    .form h3 {
+        position: relative;
+        right: 400px;
+        top: 586px
+     }
+  
+    label {
+        position: relative;
+        top: 595px;
+        right: 451px;
+    }
+   
+  
+    input {
+
+        position: relative;
+        top: 602px;
+        right: 474px;
+    }
+
+  
+    .checkout-to-invoice-btn {
+        width: none;
+        left: -380px;
+        top: 31rem;
+        position: relative;
+
+
+    }
+  
+
+  }
 

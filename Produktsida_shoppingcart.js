@@ -72,6 +72,19 @@ const FirstProductBtn = document.querySelector(
 );
 FirstProductBtn.addEventListener("click", setItemValueBtn1);
 
+
+const removeBtns = document.querySelectorAll(".remove")
+for (i = 0; i < removeBtns.length; i++) {
+  removeBtn = removeBtns[i]
+  console.log("hej från tabort knappen")
+  removeBtn.addEventListener("onClick", removeVara)
+
+}
+
+function removeVara(event) {
+  const button = event.target.parentElemnet.parentElemnet.remove();
+}
+
 /* ---------------------FUNKTION FÖR KNAPP 2 I PRODUKTLISTA------------------------ */
 function setItemValueBtn2() {
   const SecondProductPrice = document.querySelector(

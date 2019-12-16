@@ -115,6 +115,14 @@ input:focus {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+.checkout-container {
+    img {
+        height: 75px;
+        width: 75px;
+    }
+}
+
 /* Media Query för mobil */ 
 
 @media only screen and (max-width: 1200px){

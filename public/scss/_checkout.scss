@@ -37,7 +37,7 @@ a{
 
 }
 #orderstatus{
-    margin-left: 310px;
+    margin-left: 270px;
     font-size: 40px;
     color:white;
     text-shadow: 0 2px 7px rgba(0, 0, 0, .4);
@@ -75,14 +75,14 @@ input {
     font-size: 14px;
     padding-bottom: 7px;
     font-weight: 600;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
     display: block;
     margin: auto;
     color: white;
 }
 
 input:focus {
-    border-bottom:2px solid #ffd45f;
+    border-bottom: 2px solid orange;
 }
 .checkout-to-invoice-btn {
     background-color: orange;
@@ -94,7 +94,7 @@ input:focus {
     word-spacing: 3px;
     padding: 10px;
     width: 34%;
-    left: 280px;
+    left: 270px;
     top: -2px;
     position: relative;
     bottom: 65px;
@@ -104,9 +104,7 @@ input:focus {
 }
 
 .checkout-to-invoice-btn:hover{
-    background: #ffd45f;
-    color: white;
-    border: 1px solid orange;
+    opacity: 0.5;
 }
 
 .form p {
